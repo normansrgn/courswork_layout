@@ -23,7 +23,7 @@
 
 .header_section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border-bottom: 1px solid rgb(224, 223, 223);
 }
 
@@ -80,7 +80,7 @@
     color: white;
     border-radius: 8px;
     border: 0cap;
-    transition: 0.3s;
+    transition: .3s ease;
 
     text-align: center;
 }
@@ -89,7 +89,7 @@
     background: none;
     border: 1px solid black;
     color: black;
-    transition: 0.3s;
+    transition: .3s ease;
     cursor: pointer;
 }
 
@@ -363,3 +363,7 @@
     /* font-weight: bold; */
 }
 
+
+.cards_inst {
+    display: flex;
+}
