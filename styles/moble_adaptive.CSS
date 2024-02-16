@@ -63,11 +63,6 @@
 @media (max-width: 1200px) {}
 
 @media (max-width: 1400px) {
-    .header_section {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }    
 
 
     .promo_text {
