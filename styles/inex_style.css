@@ -7,7 +7,7 @@
     /* background-color: black; */
     /* border-radius: 60%; */
     margin: 10px 0 10px 10px;
-    
+
 }
 
 .logo_secton {
@@ -366,4 +366,73 @@
 
 .cards_inst {
     display: flex;
+}
+
+.swiper-slide {
+    /* height: 100px !important; */
+}
+
+.img_seiper {
+    width: 100%;
+}
+
+
+.btm_swiper {
+
+    width: 50px;
+    height: 100px;
+}
+
+.row_sw {
+    align-items: center;
+}
+
+
+@media (max-width: 576px) {
+    .mini_card {
+        margin-left: 48px;
+        width: 90%;
+
+    }
+
+
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1400px) {
+    .promo_text {
+        align-items: center;
+        padding-top: 0px;
+        padding-bottom: 25px;
+    }
+
+    .small_promo_text {
+        padding-right: 0px;
+    }
+
+    .mini_cards {
+        padding-left: 0px;
+        align-items: center;
+    }
+
+    .promo_section_text {
+        padding-top: 28px;
+        font-size: 26px;
+    }
+
+    .pad {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .inst_post_card {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
 }
