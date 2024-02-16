@@ -1,4 +1,13 @@
 @media (max-width: 576px) {
+   
+    .navigation_item {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .logo_secton {
+        gap: 53px;
+    }
     .mini_card {
         margin-left: -18px;
         width: 90%;
@@ -10,7 +19,40 @@
         margin-right: 27px;
     }
 
+    .card_small_text {
+        font-size: 16px;
+    }
 
+    .card_main_text {
+        font-size: 19px;
+    }
+
+
+    .cataog_card {
+        margin-left: 16px;
+    }
+    .promo_section_text {
+        padding-top: 1px;
+        font-size: 23px;
+    }
+    .header_section {
+        width: 110%;
+    }
+    
+    .mini_card {
+        margin-left: -15px;
+    }
+
+    .whyus_section {
+        width: 110%;
+    }
+
+    .subscribe_promo {
+        width: 110%;
+    }
+
+    .foot_nav_list {
+        gap: 10px;
 }
 
 @media (max-width: 768px) {}
@@ -55,14 +97,7 @@
         margin-bottom: 30px;
     }
 
-    .navigation_item {
-        flex-direction: column;
-        gap: 3px;
-    }
-
-    .logo_secton {
-        gap: 53px;
-    }
+   
 
     .hello_text {
         font-size: 25px;
