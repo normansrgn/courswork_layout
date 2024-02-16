@@ -1,0 +1,99 @@
+@media (max-width: 576px) {
+    .mini_card {
+        margin-left: -18px;
+        width: 90%;
+
+    }
+
+    .promo_section_text {
+        text-align: center;
+        margin-right: 27px;
+    }
+
+
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1400px) {
+    .promo_text {
+        align-items: center;
+        text-align: center;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 25px;
+    }
+
+    .small_promo_text {
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .mini_cards {
+        padding-left: 0px;
+        align-items: center;
+    }
+
+    .promo_section_text {
+        padding-top: 28px;
+        font-size: 26px;
+        margin-right: 27px;
+        text-align: center;
+    }
+
+    .pad {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .inst_post_card {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .navigation_item {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .logo_secton {
+        gap: 53px;
+    }
+
+    .hello_text {
+        font-size: 25px;
+    }
+
+    .cataog_card {
+        width: 89%;
+        margin-bottom: 20px;
+    }
+
+    .input_subs {
+        width: 230px;
+    }
+
+    .subscrb_man_text {
+        padding-top: 17px;
+        font-size: 28px;
+
+    }
+
+    .small_sub_text {
+        font-size: 16px;
+    }
+    .foot_nav_link {
+        font-size: 9px;
+    }
+    
+    .foot_nav_list {
+        gap: 33px;
+    }
+
+}
+
+
