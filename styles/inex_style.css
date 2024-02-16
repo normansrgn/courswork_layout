@@ -22,7 +22,9 @@
 }
 
 .header_section {
+    background-color: white;
     display: flex;
+    width: 100%;
     justify-content: space-around;
     border-bottom: 1px solid rgb(224, 223, 223);
 }

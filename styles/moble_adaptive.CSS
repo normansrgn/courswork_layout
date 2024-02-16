@@ -53,6 +53,7 @@
 
     .foot_nav_list {
         gap: 10px;
+    }
 }
 
 @media (max-width: 768px) {}
@@ -62,6 +63,13 @@
 @media (max-width: 1200px) {}
 
 @media (max-width: 1400px) {
+    .header_section {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }    
+
+
     .promo_text {
         align-items: center;
         text-align: center;
@@ -119,7 +127,7 @@
     }
 
     .small_sub_text {
-        font-size: 16px;
+        font-size: 12px;
     }
     .foot_nav_link {
         font-size: 9px;
