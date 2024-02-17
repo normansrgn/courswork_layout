@@ -1,5 +1,15 @@
 @media (max-width: 576px) {
-   
+
+    .container,
+    .container-fluid,
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        width: 90%;
+    }
+
     .navigation_item {
         flex-direction: column;
         gap: 3px;
@@ -8,6 +18,7 @@
     .logo_secton {
         gap: 53px;
     }
+
     .mini_card {
         margin-left: -18px;
         width: 90%;
@@ -16,55 +27,98 @@
 
     .promo_section_text {
         text-align: center;
-        margin-right: 27px;
     }
 
     .card_small_text {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .card_main_text {
-        font-size: 19px;
+        font-size: 16px;
     }
 
 
     .cataog_card {
         margin-left: 16px;
     }
+
     .promo_section_text {
-        padding-top: 1px;
         font-size: 23px;
     }
+
     .header_section {
-        width: 110%;
+        width: 100%;
     }
-    
+
     .mini_card {
         margin-left: -15px;
     }
 
     .whyus_section {
-        width: 110%;
+        width: 100%;
     }
 
     .subscribe_promo {
-        width: 110%;
+        width: 100%;
     }
 
     .foot_nav_list {
         gap: 10px;
     }
+
+    .catalog_maintext {
+        font-size: 28px;
+    }
+
+    .promo_card_block {
+        margin-left: 7px;
+        flex-direction: column;
+    }
+
+    
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    
 
-@media (max-width: 992px) {}
+}
+
+@media (max-width: 992px) {
+    .hello_text {
+        font-size: 34px;
+    }
+
+    .input_subs {
+        width: 279px;
+    }
+
+  
+
+    .card_main_text {
+        font-size: 15px;
+    }
+
+    .cloth_catalog {
+        padding-bottom: 1px;
+    }
+
+  
+}
 
 @media (max-width: 1200px) {}
 
 @media (max-width: 1400px) {
+    .inst_post_card {
+        height: 473px;
+        width: 360px;
+    }
 
+    .inst_image {
+        width: 360px;
+        height: 360px;
+    }
 
+    
     .promo_text {
         align-items: center;
         text-align: center;
@@ -86,7 +140,6 @@
     .promo_section_text {
         padding-top: 28px;
         font-size: 26px;
-        margin-right: 27px;
         text-align: center;
     }
 
@@ -100,10 +153,10 @@
         margin-bottom: 30px;
     }
 
-   
+
 
     .hello_text {
-        font-size: 25px;
+        font-size: px;
     }
 
     .cataog_card {
@@ -112,7 +165,7 @@
     }
 
     .input_subs {
-        width: 230px;
+        /* width: 100px; */
     }
 
     .subscrb_man_text {
@@ -122,16 +175,20 @@
     }
 
     .small_sub_text {
-        font-size: 12px;
+        font-size: 16px;
+
     }
+
     .foot_nav_link {
         font-size: 9px;
     }
-    
+
     .foot_nav_list {
         gap: 33px;
     }
 
+    .promo_card_block {
+        flex-direction: column;
+    }
+
 }
-
-

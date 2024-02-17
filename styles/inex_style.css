@@ -21,6 +21,11 @@
     text-align: center;
 }
 
+.header_flex {
+    display: flex;
+    justify-content: space-around;
+}
+
 .header_section {
     background-color: white;
     display: flex;
@@ -52,7 +57,6 @@
 .hello_section {
     padding-top: 60px;
     padding-bottom: 60px;
-    border-bottom: 1px solid rgb(224, 223, 223);
 
 }
 
@@ -100,7 +104,10 @@
     padding-bottom: 60px;
 }
 
-.main_centr {}
+.promo_card_block {
+    justify-content: center;
+    display: flex;
+}
 
 .catalog_maintext {
     font-size: 40px;
@@ -117,6 +124,11 @@
     border-radius: 8px;
     border: 1px solid rgb(224, 223, 223);
 
+}
+
+.section_gap {
+    display: flex;
+    gap: 30px;
 }
 
 .card_image {
@@ -148,14 +160,12 @@
 .promo_text {
     padding-top: 250px;
     padding-bottom: 250px;
-    padding-left: 70px;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
 .mini_cards {
-    padding-left: 150px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -275,7 +285,6 @@
 
 .instagram_section {
 
-    border-bottom: 1px solid rgb(224, 223, 223);
 }
 
 .subscribe_promo {
