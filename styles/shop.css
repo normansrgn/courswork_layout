@@ -1,0 +1,72 @@
+.choose_section {
+    border-bottom: 1px solid #0f000eac;
+}
+
+.main_block {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+
+}
+
+.main_block h1 {
+    font-size: 38px;
+    margin-top: 160px;
+    font-weight: bold;
+}
+
+.card_pics {
+    width: 730px;
+    height: 340px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.buttons_block {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.buttons_block button {
+    width: 120px ;
+    height: 36px;
+
+}
+
+/* ПОПУЛЯРНЫЕ ТОВАРЫ */
+
+
+.popular_cards {
+    padding-bottom: 60px;
+}
+
+.pupular_products {
+}
+
+
+.pupular_products h2 {
+    padding-top: 60px;
+    padding-bottom: 44px;
+
+}
+
+.tovar_inf {
+    padding: 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.buy {
+    font-weight: bold;
+}
+
+.tovar_inf span {
+    font-size: 17px;
+
+    text-align: start;
+    /* font-weight: bold; */
+}
