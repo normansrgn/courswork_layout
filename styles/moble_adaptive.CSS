@@ -1,20 +1,30 @@
-
-
 @media (max-width: 768px) {
-    
+    .hello_text {
+        font-size: 25px;
+    }
+
+    .small_hellotext {
+        font-size: 18px;
+    }
+
 
 }
 
 @media (max-width: 992px) {
     .hello_text {
-        font-size: 34px;
+        font-size: 25px;
+    }
+
+    .small_hellotext {
+        font-size: 18px;
     }
 
     .input_subs {
         width: 243px;
     }
 
-  
+
+
 
     .card_main_text {
         font-size: 15px;
@@ -24,7 +34,7 @@
         padding-bottom: 1px;
     }
 
-  
+
 }
 
 @media (max-width: 1200px) {}
@@ -40,7 +50,7 @@
         height: 360px;
     }
 
-    
+
     .promo_text {
         align-items: center;
         text-align: center;
@@ -126,6 +136,7 @@
     .container-sm {
         width: 90%;
     }
+
     .inst_post_card {
         height: 430px;
         width: 311px;
@@ -168,9 +179,7 @@
         margin-left: 16px;
     }
 
-    .promo_section_text {
-        font-size: 23px;
-    }
+
 
     .header_section {
         width: 100%;
@@ -201,5 +210,28 @@
         flex-direction: column;
     }
 
-    
+    .small_sub_text {
+        font-size: 12px;
+    }
+
+    .promo_section_text {
+        font-size: 20px;
+    }
+
+    .subscrb_man_text {
+        font-size: 20px;
+    }
+
+    .hello_section {
+        padding-bottom: 0px;
+    }
+
+    .promo_section_text {
+        padding-top: 0px;
+    }
+
+    .small_hellotext {
+        font-size: 16px;
+    }
+
 }
