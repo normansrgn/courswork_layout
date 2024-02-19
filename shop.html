@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/swiper.css">
     <link rel="stylesheet" href="./styles/inex_style.css">
     <link rel="stylesheet" href="./styles/shop.css">
+    <!-- <link rel="stylesheet" href="./styles/burgermenu.css"> -->
 
     <link rel="stylesheet" href="./styles/moble_adaptive.CSS">
 
@@ -17,7 +18,7 @@
 
 <body>
     <header class="header_section">
-        <div class="container">
+        <div class="container header_container">
             <div class="header_flex">
 
                 <div class="logo_secton">
@@ -28,18 +29,39 @@
                     <span class="log_text"> Anti-Meriya</span></a>
                 </div>
 
-                <div class="nav_bar">
+                <nav class="nav_bar hidden">
                     <ul class="navigation_item">
-                        <li> <a href="./index.html" class="navigation_link">Home</a></li>
-                        <li> <a href="" class="navigation_link">Shop</a></li>
+                        <li> <a href="" class="navigation_link">Home</a></li>
+                        <li> <a href="./shop.html" class="navigation_link">Shop</a></li>
                         <li> <a href="" class="navigation_link">About</a></li>
                         <li> <a href="" class="navigation_link">Contact</a></li>
 
                     </ul>
+                </nav>
+                <div class="burger_menu">
+
+                    <button id="burger__btn" type="button">
+                        <span id="burgerSpan"></span>
+                    </button>
+                    <aside class="burger__container">
+                        <div class="burger__content">
+                            <nav class="nav_bar burger_nav">
+                                <ul class="navigation_item">
+                                    <li> <a href="" class="navigation_link">Home</a></li>
+                                    <li> <a href="./shop.html" class="navigation_link">Shop</a></li>
+                                    <li> <a href="" class="navigation_link">About</a></li>
+                                    <li> <a href="" class="navigation_link">Contact</a></li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </aside>
                 </div>
             </div>
+
         </div>
     </header>
+
     <main>
         <section class="choose_section">
             <div class="container">
@@ -126,6 +148,9 @@
         </div>
     </footer>
 
+
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 

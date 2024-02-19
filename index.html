@@ -9,24 +9,24 @@
     <link rel="stylesheet" href="./styles/swiper.css">
     <link rel="stylesheet" href="./styles/inex_style.css">
     <link rel="stylesheet" href="./styles/moble_adaptive.CSS">
-
+    <link rel="stylesheet" href="./styles/burgermenu.css">
     <title>Coursework</title>
 </head>
 
 <body>
     <header class="header_section">
-        <div class="container">
+        <div class="container header_container">
             <div class="header_flex">
 
                 <div class="logo_secton">
                     <div class="logo">
                         <a class="url" href="./index.html">
-                             <!-- <img src="./index_pics/logo.svg" alt=""> -->
+                            <!-- <img src="./index_pics/logo.svg" alt=""> -->
                     </div>
                     <span class="log_text"> Anti-Meriya</span></a>
                 </div>
 
-                <div class="nav_bar">
+                <nav class="nav_bar hidden">
                     <ul class="navigation_item">
                         <li> <a href="" class="navigation_link">Home</a></li>
                         <li> <a href="./shop.html" class="navigation_link">Shop</a></li>
@@ -34,8 +34,28 @@
                         <li> <a href="" class="navigation_link">Contact</a></li>
 
                     </ul>
+                </nav>
+                <div class="burger_menu">
+
+                    <button id="burger__btn" type="button">
+                        <span id="burgerSpan"></span>
+                    </button>
+                    <aside class="burger__container">
+                        <div class="burger__content">
+                            <nav class="nav_bar burger_nav">
+                                <ul class="navigation_item">
+                                    <li> <a href="" class="navigation_link">Home</a></li>
+                                    <li> <a href="./shop.html" class="navigation_link">Shop</a></li>
+                                    <li> <a href="" class="navigation_link">About</a></li>
+                                    <li> <a href="" class="navigation_link">Contact</a></li>
+            
+                                </ul>
+                            </nav>
+                        </div>
+                    </aside>
                 </div>
             </div>
+
         </div>
     </header>
 
@@ -167,7 +187,11 @@
 
                         <div class="col-xxl-3 col-lg-12">
                             <div class="inst_post_card pad">
-                                <img class="inst_image" src="./instagram_section_pics/pos_one.jpg" alt="">
+                                <div class="inst_card_image">
+
+                                    <img class="inst_image" src="./instagram_section_pics/pos_one.jpg" alt="">
+                                </div>
+
                                 <div class="inst_text_block">
                                     <div class="main_inst_text">
                                         Наша новая коллекция #minimaliststyle
@@ -188,12 +212,15 @@
                         </div>
                         <div class="col-xxl-3 col-lg-12">
                             <div class="inst_post_card pad">
-                                <img class="inst_image" src="./instagram_section_pics/post_seconde.jpg" alt="">
+                                <div class="inst_card_image">
+                                    <img class="inst_image" src="./instagram_section_pics/post_seconde.jpg" alt="">
+                                </div>
                                 <div class="inst_text_block">
                                     <div class="main_inst_text">
                                         Simplicity is key! #minimalism
                                     </div>
                                     <div class="inst_profile_block">
+
                                         <div> <img class="inst_logo" src="./index_pics/logo.svg" alt=""> </div>
                                         <a class="url" href="">
                                             <div class="inst_nick">antimariya.fashion</div>
@@ -218,18 +245,19 @@
             <div class="subs_text">
                 <h5 class="subscrb_man_text">Подпишитесь на <br> обновления
                 </h5>
-                <div class="small_sub_text">Подпишитесь на нашу рассылку, чтобы быть в курсе последних <br> новостей и
+                <div class="small_sub_text">Подпишитесь на нашу рассылку, чтобы быть в курсе последних <br> новостей
+                    и
                     предложений</div>
             </div>
             <div class="text_subs">
                 <div class="subs_form">
                     <div class="first_side">
-                        <span class="form_name">Имя</span>
-                        <input class="input_subs" type="name" placeholder="Ваше Имя">
+                        <label for="name_input" class="form_name">Имя</label>
+                        <input id="name_input" class="input_subs" type="name" placeholder="Ваше Имя">
                     </div>
                     <div class="first_side ofsset">
-                        <span class="form_name">Email</span>
-                        <input class="input_subs " type="email" placeholder="Введите вашу почту">
+                        <label for="email_id" class="form_name">Email</label>
+                        <input id="email_id" class="input_subs " type="email" placeholder="Введите вашу почту">
                     </div>
 
                 </div>
@@ -262,8 +290,8 @@
 
 
 
-    <!-- <script src="./swiper-bundle.min.js"></script> -->
-    <!-- <script src="./script.js"></script> -->
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

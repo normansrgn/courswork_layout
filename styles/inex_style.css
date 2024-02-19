@@ -1,5 +1,17 @@
+@import url("./burgermenu.css");
+
+/* ШРИФТЫ */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    font-family:  inherit;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     color: #ffeefe;
     /* background: -webkit-linear-gradient(60deg, #2e2439, #0f0b14); */
     /* background:  -webkit-linear-gradient(55deg, #1d102b,#0c0810); */
@@ -17,6 +29,10 @@ body {
     /* border-radius: 60%; */
     margin: 10px 0 10px 10px;
 
+}
+
+.burger_menu {
+    display: none;
 }
 
 .logo_secton {
@@ -103,12 +119,22 @@ body {
     text-align: center;
 }
 
-.btm:hover {
-    background-color: #bb9dde;
-    /* border: 1px solid rgb(255, 255, 255); */
-    color: #110911;
-    transition: .3s ease;
-    cursor: pointer;
+@media (hover: hover) {
+    .btm:hover {
+        background-color: #bb9dde;
+        color: #110911;
+        transition: .3s ease;
+        cursor: pointer;
+    }
+}
+
+@media (hover: none) {
+    .btm:active {
+        background-color: #bb9dde;
+        color: #110911;
+        transition: .1s ease;
+        cursor: pointer;
+    }
 }
 
 .cloth_catalog {
@@ -231,14 +257,14 @@ body {
 }
 
 .pad {
-    margin-left: 150px;
+    /* margin-left: 150px; */
 }
 
 .inst_post_card {
     margin-top: 80px;
     /* margin-left: 150px; */
     width: 240px;
-    height: 358px;
+    height: 375px;
     background-color: #120316cc;
     border-radius: 8px;
     border: 1px solid #0f000eac;
@@ -330,12 +356,15 @@ body {
 }
 
 
-
+.first_side {
+    display: flex;
+    justify-content: space-between;
+}
 
 .input_subs {
     background-color: #e3cfeb;
     padding: 11px;
-    width: 600px;
+    width: 270px;
     height: 10px;
     border-radius: 9px;
     border: 1px solid #0f000eac;
