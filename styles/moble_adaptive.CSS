@@ -308,8 +308,53 @@
         /* gap: 30px; */
         gap: 50px;
     }
+
     .reviwes_main_block h1 {
         text-align: center;
         font-size: 32px;
     }
+}
+
+
+
+
+/* SIGN IN LAYOUT */
+
+@media (max-width: 720px) {
+    .sign_lay {
+        width: 280px
+    }
+
+    .form_main_text h1 {
+        font-size: 35px;
+    }
+    .form_main_text div {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 472px) {
+    .form_main_text h1 {
+        font-size: 33px;
+    }
+
+    .form_main_text div {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .form_main_text h1 {
+        font-size: 25px;
+    }
+
+    .form_main_text div {
+        font-size: 12px;
+    }
+
+    .sign_lay {
+        width: 246px;
+    }
+
 }

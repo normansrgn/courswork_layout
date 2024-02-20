@@ -8,12 +8,8 @@
     <link rel="stylesheet" href="./styles/bootstrap-grid.css">
     <link rel="stylesheet" href="./styles/swiper.css">
     <link rel="stylesheet" href="./styles/inex_style.css">
-    <link rel="stylesheet" href="./styles/shop.css">
-    <link rel="stylesheet" href="./styles/about.css">
-    <!-- <link rel="stylesheet" href="./styles/burgermenu.css"> -->
-
     <link rel="stylesheet" href="./styles/moble_adaptive.CSS">
-
+    <link rel="stylesheet" href="./styles/burgermenu.css">
     <title>Coursework</title>
 </head>
 
@@ -66,71 +62,41 @@
     </header>
 
     <main>
-        <div class="hello_section">
+        <section class="registration">
             <div class="container">
-
-                <h1 class="hello_text">
-                    Как нас найти?
-                </h1>
-                <div class="small_hellotext">
-                    Наш магазин находится по адресу, Город Краснодар, <br> улица Красноармейская ул., 68
-                </div>
-                <div class="hello_btm">
-                    <a target="_blank" href="https://yandex.ru/maps/-/CDBPNMNZ"> <button class="btm btm_map"> Открыть на карте</button></a>
-                </div>
-
-
-            </div>
-
-
-        </div>
-
-        <section class="map">
-            <div class="container">
-
-                <div class="map_web">
-                    <iframe
-                        class="map_style" src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;source=constructor-api&amp;um=constructor%3Af9dd777dd078b2eb9a7860566dbaba1bff8570ca3b681d7fae4ef3e882a485f9"
-                        frameborder="0" allowfullscreen="true" width="1100px" height="292px"
-                        style="display: block;"></iframe>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="reviews_section paddin_reviwes">
-            <div class="container">
-                <div class="reviwes_main_block">
-                    <div class="text_block reviwes_text map_reviwes">
-                        <h1>Отзывы посетителей</h1>
-
+                <div class="form_sign_in">
+                    <div class="form_main_text">
+                        <h1>Зарегистрироваться</h1>
+                        <div class="reg_text">Пожалуйста, заполните необходимую информацию</div>
                     </div>
-                    <div class="reviwes_block">
-                        <div class="reviwes_card">
-                            <div class="user_name_and_estimation">
-                                <span>John Doe</span>
-                                <img src="./shop_pics/rewiwes_pics/estimation.svg" alt="">
-                            </div>
-                            <div class="reviews_card_text">
-                                Отличное обслуживание клиентов и высококачественная продукция
-                            </div>
-                            <div class="reaction_block">
-                                <img src="./instagram_section_pics/like.png" alt="">
-                                <img src="./instagram_section_pics/comment.png" alt="">
-                            </div>
 
-                        </div>
-                        <div class="reviwes_card">
-                            <div class="user_name_and_estimation">
-                                <span>John Doe</span>
-                                <img src="./shop_pics/rewiwes_pics/estimation.svg" alt="">
+                    <div class="form_blog">
+                        <div class="subs_form sign_ins_flex">
+                            <div class="first_side ">
+                                <label for="name_input" class="form_name ">Имя</label>
+                                <input id="name_input" class=" sign_lay" type="name" placeholder="Ваше Имя">
                             </div>
-                            <div class="reviews_card_text">
-                                Персонал магазина был знающим и услужливым
+                            <div class="first_side ">
+                                <label for="email_id" class="form_name">Ваша Фамилия</label>
+                                <input id="email_id" class=" sign_lay " type="email" placeholder="Введите вашу фамилию">
                             </div>
-                            <div class="reaction_block">
-                                <img src="./instagram_section_pics/like.png" alt="">
-                                <img src="./instagram_section_pics/comment.png" alt="">
+                            <div class="first_side ">
+                                <label for="email_id" class="form_name">Email</label>
+                                <input id="email_id" class=" sign_lay " type="email" placeholder="Введите вашу почту">
+                            </div>
+                            <div class="first_side ">
+                                <label for="email_id" class="form_name">Пароль</label>
+                                <input id="email_id" class=" sign_lay " type="email" placeholder="Придумайте пароль">
+                            </div>
+                            <div class="first_side ">
+                                <label for="email_id" class="form_name">Повторите Пороль</label>
+                                <input id="email_id" class=" sign_lay " type="email" placeholder="Повторите ваш Пороль">
+                            </div>
+                            <div class="hello_btm">
+                                <a href=""> <button class=" btm_signIn">Зарегистрироваться</button></a>
+                            </div>
+                            <div class="log_in">
+                                <span>или </span> <a href="./log_in.html">войти</a> <span> если у вас есть аккаунт</span>
                             </div>
 
                         </div>
@@ -139,10 +105,9 @@
                 </div>
             </div>
         </section>
-
-
 
     </main>
+
 
     <footer>
         <div class="foooter_section">
@@ -158,9 +123,7 @@
     </footer>
 
 
+
     <script src="./swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
-
 </body>
-
-</html>
