@@ -70,3 +70,79 @@
     text-align: start;
     /* font-weight: bold; */
 }
+
+
+/* БЛОК ОТЗЫВОВ */
+
+.reviews_section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.reviwes_card {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: #150b19;
+    width: 271px;
+    height: 150px;
+    border-radius: 6px;
+}
+
+.user_name_and_estimation span {
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+.user_name_and_estimation img { 
+    width: 25%;
+
+}
+
+.user_name_and_estimation {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.reviews_card_text {
+    margin-top: 30px ;
+    text-align: start;
+}
+
+.reaction_block {
+    padding-top: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+.reaction_block img {
+    gap: 5px;
+    width: 8%;
+}
+
+.reviwes_main_block {
+    display: flex;
+    justify-content: space-around;
+    /* gap: 100px; */
+
+}
+
+.reviwes_main_block h1 {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.reviwes_block {
+    display: flex;
+    /* gap: 30px; */
+    gap: 50px;
+
+}
+
+.reviwes_text {
+    display: flex;
+    align-items: center;
+}

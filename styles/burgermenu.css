@@ -17,7 +17,7 @@
 
 .burger__content {
     background: #1e142a;
-    width: 60%;
+    width: 80%;
     height: 100%;
     color: black;
 }
@@ -87,4 +87,8 @@
 #burger__btn .btn-open-animation::before {
     opacity: 0;
     transition: opacity 0.2s;
+}
+
+.foooter_section {
+    height: 90px;
 }

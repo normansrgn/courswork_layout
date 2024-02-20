@@ -1,3 +1,4 @@
+/* HOME LAYOUT */
 
 @media (max-width: 576px) {
 
@@ -138,11 +139,11 @@
 
     .navigation_item {
         padding-top: 66px;
-        font-size: 23px;
+        font-size: 35px;
         flex-direction: column;
         gap: 37px;
     }
-    
+
 
 }
 
@@ -180,7 +181,7 @@
     .header_container {
         padding: 20px;
     }
-    
+
 
 
 }
@@ -188,9 +189,9 @@
 @media (max-width: 1200px) {}
 
 @media (max-width: 1400px) {
-  
 
-    
+
+
 
 
     .promo_text {
@@ -267,3 +268,48 @@
 
 }
 
+
+/* SHOP LAYOUT */
+
+
+@media (max-width: 1400px) {
+    .reviwes_main_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .map_style {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 862px) {
+    .card_pics {
+        display: none;
+    }
+
+    .main_block h1 {
+        font-size: 70px;
+    }
+
+    .main_block {
+        padding-top: 0px;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    .reviwes_block {
+        display: flex;
+        flex-direction: column;
+        /* gap: 30px; */
+        gap: 50px;
+    }
+    .reviwes_main_block h1 {
+        text-align: center;
+        font-size: 32px;
+    }
+}
