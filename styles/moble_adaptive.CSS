@@ -297,17 +297,6 @@
     .main_block {
         padding-top: 0px;
     }
-
-    .reviwes_block {
-        display: flex;
-        flex-direction: column;
-        /* gap: 30px; */
-        gap: 50px;
-    }
-    .reviwes_main_block h1 {
-        text-align: center;
-        font-size: 32px;
-    }
 }
 
 
@@ -322,9 +311,5 @@
     .reviwes_main_block h1 {
         text-align: center;
         font-size: 32px;
-    }
-
-    .foot_nav_link {
-        font-size: 8px;
     }
 }
