@@ -7,7 +7,7 @@
 
 
 * {
-    font-family:  inherit;
+    font-family: inherit;
 }
 
 body {
@@ -394,7 +394,8 @@ main {
 
 .subs_form {
     padding-top: 30px;
-    /* display: flex; */
+    display: flex;
+    align-items: center;
     gap: 24px;
     flex-direction: column;
 }
@@ -406,6 +407,7 @@ main {
 }
 
 .foooter_section {
+    align-items: center;
     padding-top: 20px;
     padding-bottom: 19px;
 
