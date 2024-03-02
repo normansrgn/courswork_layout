@@ -19,6 +19,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    padding-bottom: 15px;
 }
 
 .prof_nav_buttons {
@@ -27,7 +28,7 @@
 }
 
 .prof_btm {
-    width: 160px;
+    width: 180px;
     height: 48px;
     border-radius: 8px;
     border: none;
@@ -91,5 +92,81 @@
 
 .card_inf {
     font-size: 16px;
+}
+
+/* ORDER BLOCK */
+
+.profil_small_text {
+    text-align: center;
+    font-size: 18px;
+}
+
+.oreder_sectiontext {
+    margin-bottom: 44px;
+}
+
+.user_orders_section {
+    padding-bottom: 60px;
+    border-bottom: 1px solid #0f000eac;
+
+
+}
+
+
+/* SAVED ITEMS */
+
+.save_item_section {
+    padding-top: 60px;
+}
+
+.saved_nav {
+}
+
+.saved_tovar {
+    height: 70px;
+    width: 295px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #160b20;
+    display: flex;
+    gap: 16px;
+}
+
+.item_image {
+    padding: 5px 0 0 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.saved_item_information {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.saved_nameprice {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.item_date {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.saved_tovar_list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.icons_basket {
+    display: flex;
+    gap: 30px;
 }
 

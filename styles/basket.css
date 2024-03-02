@@ -1,0 +1,51 @@
+.your_basket {
+    padding-top: 60px;
+}
+
+.basket_item_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+.basket_tovar {
+    display: flex;
+    gap: 16px;
+    padding: 6px;
+    width: 350px;
+    border-radius: 8px;
+    border: 1px solid #2e233f;
+}
+
+.basket_item_inf {
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.basket_item_name {
+    font-size: 24px;
+    font-weight: 450;
+}
+
+.basket_item_quantity {
+    font-size: 17px;
+}
+
+.basket_item_price {
+    font-size: 17px;
+}
+
+.basket_item_price {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.basket_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

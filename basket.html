@@ -40,7 +40,7 @@
                     <ul class="navigation_item">
                         <li> <a href="./profile.html" class="navigation_link"><i class="fa-regular fa-user"></i></a>
                         </li>
-                        <li> <a href="./basket.html" class="navigation_link"><i class="fa-solid fa-basket-shopping"></i></a></li>
+                        <li> <a href="" class="navigation_link"><i class="fa-solid fa-basket-shopping"></i></a></li>
                         <li> <a href="./log_in.html" class="navigation_link">Log In</a></li>
 
 
@@ -61,7 +61,7 @@
                                     <div class="icons_basket">
                                         <li> <a href="./profile.html" class="navigation_link"><i
                                                     class="fa-regular fa-user"></i></a></li>
-                                        <li> <a href="./basket.html" class="navigation_link"><i
+                                        <li> <a href="" class="navigation_link"><i
                                                     class="fa-solid fa-basket-shopping"></i></a></li>
 
                                     </div>
@@ -70,7 +70,7 @@
                                     <li> <a href="./aboutus.html" class="navigation_link">About</a></li>
                                     <li> <a href="" class="navigation_link">Contact</a></li>
                                     <li> <a href="./log_in.html" class="navigation_link">Log In</a></li>
-                                  
+
 
                                 </ul>
                             </nav>
@@ -83,52 +83,55 @@
     </header>
 
     <main>
-        <section class="registration">
+        <div class="your_basket">
             <div class="container">
-                <div class="form_sign_in">
-                    <div class="form_main_text">
-                        <h1>Зарегистрироваться</h1>
-                        <div class="reg_text">Пожалуйста, заполните необходимую информацию</div>
-                    </div>
-
-                    <div class="form_blog">
-                        <div class="subs_form sign_ins_flex">
-                            <div class="first_side ">
-                                <label for="name_input" class="form_name ">Имя</label>
-                                <input id="name_input" class=" sign_lay" type="name" placeholder="Ваше Имя">
+                <div class="profile_detal_nav">
+                    <h1>Ваша корзина</h1>
+                </div>
+                <div class="basket_list">
+                    <div class="basket_tovar">
+                        <div><img src="./index_pics/t-shirt.jpg" alt="" class="basket_item_image"></div>
+                        <div class="basket_item_inf">
+                            <div>
+                                <div class="basket_item_name">Shirt</div>
+                                <div class="basket_item_quantity">1x</div>
                             </div>
-                            <div class="first_side ">
-                                <label for="email_id" class="form_name">Ваша Фамилия</label>
-                                <input id="email_id" class=" sign_lay " type="email" placeholder="Введите вашу фамилию">
-                            </div>
-                            <div class="first_side ">
-                                <label for="email_id" class="form_name">Email</label>
-                                <input id="email_id" class=" sign_lay " type="email" placeholder="Введите вашу почту">
-                            </div>
-                            <div class="first_side ">
-                                <label for="email_id" class="form_name">Пароль</label>
-                                <input id="email_id" class=" sign_lay " type="password" placeholder="Придумайте пароль">
-                            </div>
-                            <div class="first_side ">
-                                <label for="email_id" class="form_name">Повторите Пароль</label>
-                                <input id="email_id" class=" sign_lay " type="password" placeholder="Повторите ваш Пароль">
-                            </div>
-                            <div class="hello_btm">
-                                <a href=""> <button class=" btm_signIn">Зарегистрироваться</button></a>
-                            </div>
-                            <div class="log_in">
-                                <span>или </span> <a href="./log_in.html">войти</a> <br> <span>  если у вас есть аккаунт</span>
-                            </div>
+                            <div class="basket_item_price">100$</div>
 
                         </div>
-                    </div>
 
+
+                    </div>
+                    <div class="basket_tovar">
+                        <div><img src="./index_pics/t-shirt.jpg" alt="" class="basket_item_image"></div>
+                        <div class="basket_item_inf">
+                            <div>
+                                <div class="basket_item_name">Shirt</div>
+                                <div class="basket_item_quantity">1x</div>
+                            </div>
+                            <div class="basket_item_price">100$</div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="basket_tovar">
+                        <div><img src="./index_pics/t-shirt.jpg" alt="" class="basket_item_image"></div>
+                        <div class="basket_item_inf">
+                            <div>
+                                <div class="basket_item_name">Shirt</div>
+                                <div class="basket_item_quantity">1x</div>
+                            </div>
+                            <div class="basket_item_price">100$</div>
+                            
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
-        </section>
-
+        </div>
     </main>
-
 
     <footer>
         <div class="foooter_section">
@@ -149,3 +152,5 @@
     <script src="./swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
+
+</html>
