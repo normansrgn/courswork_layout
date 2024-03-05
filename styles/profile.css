@@ -170,3 +170,17 @@
     gap: 30px;
 }
 
+.swiper_profile {
+    width: 1200px;
+}
+
+.prof_slide_fl {
+    justify-self: center;
+    align-items: center;
+    /* gap: 5px; */
+    display: flex;
+}
+
+.fa-arrow-right {
+    display: block;
+}

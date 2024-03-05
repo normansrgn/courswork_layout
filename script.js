@@ -1,25 +1,5 @@
 
-// SWIPER //
-
-// const swiper = new Swiper('.swiper', {
-//     // Optional parameters   
-//     loop: true,
-
-//     // If we need pagination
-//     pagination: {
-//         el: '.swiper-pagination',
-//     },
-
-//     // Navigation arrows
-//     navigation: {
-//         nextEl: '.first',
-//         prevEl: '.back',
-//     },
-
-   
-// });
-
-
+// SWIPER shop //
 const swiper = new Swiper('.swiper', {
     // Optional parameters
 
@@ -38,6 +18,30 @@ const swiper = new Swiper('.swiper', {
 
    
 });
+
+// SWIPER PROFILE
+
+const swiper_profile = new Swiper('.swiper_profile', {
+    // Optional parameters
+
+    loop: true,
+
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.fa-arrow-left',
+        prevEl: '.fa-arrow-right',
+    },
+
+   
+});
+
+
+
 
 const burgerMenu = () => {
     const burgerBtn = document.querySelector('#burger__btn');
