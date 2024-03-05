@@ -150,6 +150,8 @@ main {
     }
 }
 
+
+
 .cloth_catalog {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -281,6 +283,13 @@ main {
     background-color: #120316cc;
     border-radius: 8px;
     border: 1px solid #0f000eac;
+}
+
+.inst_post-card {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .inst_image {

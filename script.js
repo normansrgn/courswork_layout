@@ -23,21 +23,22 @@ const swiper = new Swiper('.swiper', {
 
 const swiper_profile = new Swiper('.swiper_profile', {
     // Optional parameters
-
     loop: true,
+    slidesPerView: 3,
+    spaceBetween: 8,
 
     // autoplay: {
     //     delay: 2500,
     //     disableOnInteraction: false,
     // },
-
     // Navigation arrows
     navigation: {
         nextEl: '.fa-arrow-left',
         prevEl: '.fa-arrow-right',
     },
 
-   
+       
+  
 });
 
 

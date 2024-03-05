@@ -51,7 +51,6 @@
 
 
     .cataog_card {
-        margin-left: 16px;
     }
 
 
@@ -266,7 +265,13 @@
         flex-direction: column;
     }
 
+    .catalog_cloth_cards {
+        display: flex;
+        justify-content: center;
+    }
 }
+
+
 
 
 /* SHOP LAYOUT */

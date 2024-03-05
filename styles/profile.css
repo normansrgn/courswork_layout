@@ -171,11 +171,12 @@
 }
 
 .swiper_profile {
+    display: flex;
+    justify-content: center;
     width: 1200px;
 }
 
 .prof_slide_fl {
-    justify-self: center;
     align-items: center;
     /* gap: 5px; */
     display: flex;

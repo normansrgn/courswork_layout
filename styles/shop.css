@@ -24,17 +24,23 @@
     border-radius: 6px;
 }
 
-.cl.swiper-button-prev:after, .swiper-rtl .cl.swiper-button-next:after {
+.cl.swiper-button-prev:after,
+.swiper-rtl .cl.swiper-button-next:after {
     content: none;
 }
 
-.cl.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+.cl.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
     content: none;
 }
 
-.fa-arrow-left:before {
+.fa-arrow-left::before {
     color: #ffeefe;
 }
+
+
+
+
 
 .fa-arrow-right:before {
     color: #ffeefe;
@@ -43,12 +49,16 @@
 .swiper_shop {
     width: 550px;
     height: 300px;
-  }
+}
 
-  .swiper_image {
-   width: 100%;
- 
-  }
+.swiper_image {
+    max-width: 100%;
+
+}
+
+.swiper-img__container {
+    width: 550px;
+}
 
 .buttons_block {
     display: flex;
@@ -58,7 +68,7 @@
 }
 
 .buttons_block button {
-    width: 120px ;
+    width: 120px;
     height: 36px;
 
 }
@@ -70,8 +80,7 @@
     padding-bottom: 60px;
 }
 
-.pupular_products {
-}
+.pupular_products {}
 
 
 .pupular_products h2 {
@@ -122,7 +131,7 @@
     margin-left: 40px;
 }
 
-.user_name_and_estimation img { 
+.user_name_and_estimation img {
     width: 25%;
 
 }
@@ -135,7 +144,7 @@
 
 
 .reviews_card_text {
-    margin-top: 30px ;
+    margin-top: 30px;
     text-align: start;
 }
 
