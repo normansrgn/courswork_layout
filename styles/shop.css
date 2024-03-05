@@ -5,6 +5,7 @@
 .main_block {
     padding-top: 60px;
     display: flex;
+    gap: 300px;
     justify-content: space-between;
     padding-bottom: 60px;
 
@@ -22,6 +23,32 @@
     background-color: white;
     border-radius: 6px;
 }
+
+.cl.swiper-button-prev:after, .swiper-rtl .cl.swiper-button-next:after {
+    content: none;
+}
+
+.cl.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: none;
+}
+
+.fa-arrow-left:before {
+    color: #ffeefe;
+}
+
+.fa-arrow-right:before {
+    color: #ffeefe;
+}
+
+.swiper {
+    width: 550px;
+    height: 300px;
+  }
+
+  .swiper_image {
+   width: 100%;
+ 
+  }
 
 .buttons_block {
     display: flex;

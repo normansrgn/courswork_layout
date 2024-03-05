@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles/inex_style.css">
     <link rel="stylesheet" href="./styles/shop.css">
     <!-- <link rel="stylesheet" href="./styles/burgermenu.css"> -->
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/moble_adaptive.CSS">
 
     <title>Coursework</title>
@@ -43,7 +43,8 @@
                     <ul class="navigation_item">
                         <li> <a href="./profile.html" class="navigation_link"><i class="fa-regular fa-user"></i></a>
                         </li>
-                        <li> <a href="./basket.html" class="navigation_link"><i class="fa-solid fa-basket-shopping"></i></a></li>
+                        <li> <a href="./basket.html" class="navigation_link"><i
+                                    class="fa-solid fa-basket-shopping"></i></a></li>
                         <li> <a href="./log_in.html" class="navigation_link">Log In</a></li>
 
 
@@ -73,7 +74,7 @@
                                     <li> <a href="./aboutus.html" class="navigation_link">About</a></li>
                                     <li> <a href="" class="navigation_link">Contact</a></li>
                                     <li> <a href="./log_in.html" class="navigation_link">Log In</a></li>
-                                  
+
 
                                 </ul>
                             </nav>
@@ -95,20 +96,48 @@
                             <button class="btm">Женские</button>
                         </div>
                     </div>
-                    <div class="card_pics">
+                    <!-- <div class="card_pics">
+                    </div> -->
+                    <!-- Slider main container -->
+
+                    <div class="swiper">
+                        
+
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+
+                            <!-- Slides -->
+
+                            <div class="swiper-slide"><img class="swiper_image" src="./index_pics/hoodie.jpg" alt=""></div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            ...
+                        </div>
+
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev cl"><i class="fa-solid fa-arrow-left"></i></div>
+                        <div class="swiper-button-next cl"><i class="fa-solid fa-arrow-right"></i></i></div>
+
+                   
+                            
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
 
                     </div>
 
+
+
                 </div>
-
-
-            </div>
         </section>
         <section class="pupular_products">
             <div class="container">
                 <h2 class="catalog_maintext ">
                     Популярные товары
                 </h2>
+                
                 <div class="popular_cards">
                     <div class="row">
 
@@ -252,7 +281,7 @@
             </div>
         </section>
 
-        <section class="reviews_section">
+        <!-- <section class="reviews_section">
             <div class="container">
                 <div class="reviwes_main_block">
                     <div class="text_block reviwes_text">
@@ -292,7 +321,7 @@
 
                 </div>
             </div>
-        </section>
+        </section> -->
 
     </main>
 
@@ -310,7 +339,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/0bfd97b8fd.js" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 
