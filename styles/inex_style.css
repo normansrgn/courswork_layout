@@ -199,9 +199,14 @@ main {
 }
 
 .promo_section_text {
-    font-size: 38px;
+    font-size: 24px;
     font-weight: bold;
     text-align: start;
+}
+
+.instagram_flex {
+    display: flex;
+    justify-content: center;
 }
 
 .small_promo_text {
@@ -289,7 +294,7 @@ main {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 150px;
 }
 
 .inst_image {

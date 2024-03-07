@@ -65,6 +65,7 @@
     height: 150px;
     background-color: #160b20;
     border-radius: 6px;
+    max-width: 100%;
 
 }
 

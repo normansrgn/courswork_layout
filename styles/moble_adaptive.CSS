@@ -189,8 +189,9 @@
 
 @media (max-width: 1400px) {
 
-
-
+    .instagram_flex {
+        display: block;
+    }
 
 
     .promo_text {
@@ -362,4 +363,28 @@
         width: 246px;
     }
 
+}
+
+/* PROFILE ADAPTIVE */
+
+@media (max-width: 609px) {
+
+
+}
+
+@media (max-width: 581px) {
+    .card_inf {
+        font-size: 13px;
+    }
+    
+    
+.card_text_block span {
+    font-size: 16px;
+}
+}
+
+@media (max-width: 581px) {
+    .card_inf {
+        font-size: 11px;
+    }
 }
