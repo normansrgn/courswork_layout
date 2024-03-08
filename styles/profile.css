@@ -186,3 +186,11 @@
 .fa-arrow-right {
     display: block;
 }
+
+
+@media (max-width: 1369px) {
+    .fa-solid, .fas{
+        display: none;
+    }
+
+}
