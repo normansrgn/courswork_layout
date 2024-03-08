@@ -1,0 +1,39 @@
+.tovar_information_block {
+    padding-top: 60px;
+}
+
+.item_image_tshirt {
+    width: 428px;
+    height: 604px;
+    border-radius: 8px;
+}
+
+.tovar_visit {
+    display: flex;
+    gap: 29px;
+}
+
+.item_information_block {
+
+    gap: 17px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item_information_block h1 {
+
+    font-size: 20px;
+}
+
+.add-basket_tovar_block {
+    width: 340px;
+    padding: 16px;
+    height: 201px;
+    border-radius: 16px;
+    background-color: rgb(80, 0, 160);
+}
+
+.add-basket_tovar_block span {
+   font-size: 24px;
+    color: aliceblue;
+}
