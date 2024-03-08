@@ -44,7 +44,7 @@ const burgerMenu = () => {
     const burgerSpan = document.querySelector('#burgerSpan');
 
     burgerBtn.addEventListener('click', (e) => {
-        burgerContainer.classList.toggle('open');
+        burgerContainer.classList.toggle('open');   
         burgerSpan.classList.toggle('btn-open-animation');
     });
 
