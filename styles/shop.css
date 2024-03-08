@@ -49,6 +49,7 @@
 .swiper_shop {
     width: 550px;
     height: 300px;
+    border-radius: 9px;
 }
 
 .swiper_image {
