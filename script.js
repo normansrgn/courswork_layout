@@ -36,9 +36,6 @@ const swiper_profile = new Swiper('.swiper_profile', {
         nextEl: '.fa-arrow-left',
         prevEl: '.fa-arrow-right',
     },
-
-       
-  
 });
 
 const burgerMenu = () => {
