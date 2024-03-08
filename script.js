@@ -31,6 +31,7 @@ const swiper_profile = new Swiper('.swiper_profile', {
     //     delay: 2500,
     //     disableOnInteraction: false,
     // },
+    
     // Navigation arrows
     navigation: {
         nextEl: '.fa-arrow-left',
