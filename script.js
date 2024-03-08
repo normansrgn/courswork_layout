@@ -43,9 +43,6 @@ const swiper_profile = new Swiper('.swiper_profile', {
   
 });
 
-
-
-
 const burgerMenu = () => {
     const burgerBtn = document.querySelector('#burger__btn');
     const burgerContainer = document.querySelector('.burger__container')
