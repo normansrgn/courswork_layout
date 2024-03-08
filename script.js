@@ -6,7 +6,6 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     slidesPerView: 1,
 
-
     // autoplay: {
     //     delay: 2500,
     //     disableOnInteraction: false,
@@ -31,7 +30,7 @@ const swiper_profile = new Swiper('.swiper_profile', {
     //     delay: 2500,
     //     disableOnInteraction: false,
     // },
-    
+
     // Navigation arrows
     navigation: {
         nextEl: '.fa-arrow-left',
