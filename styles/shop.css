@@ -38,6 +38,10 @@
 }
 
 
+.fa-arrow-left::before {
+    color: #ffeefe;
+}
+
 .fa-arrow-right:before {
     color: #ffeefe;
 }
