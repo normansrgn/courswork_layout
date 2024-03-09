@@ -1,5 +1,6 @@
 .tovar_information_block {
-
+    margin-right: 150px;
+    margin-left: 150px;
     padding-top: 60px;
 }
 
@@ -11,8 +12,10 @@
 
 .tovar_visit {
     display: flex;
-    gap: 29px;
+    gap: 20px;
+  
 }
+
 
 .image_gapar {
     width: 400px;
@@ -68,7 +71,15 @@
 
 
 .see_more_link {
-    padding-top: 30px;
+    padding-left: 10px;
+    padding-top: 35px;
     font-size: 24px;
     /* font-weight: bold; */
+}
+
+.back_item {
+    padding-top: 8px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
 }
