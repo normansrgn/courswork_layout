@@ -126,6 +126,14 @@
 
 }
 
+
+@media (max-width: 704px) {
+    .inst_post-card {
+        
+        gap: 20px;
+    }
+}
+
 @media (max-width: 986px) {
     .burger_menu {
         display: block;
