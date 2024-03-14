@@ -28,10 +28,10 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     slidesPerView: 1,
 
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
 
     // Navigation arrows
     navigation: {
