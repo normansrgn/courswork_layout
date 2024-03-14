@@ -94,8 +94,8 @@
                     <div class="text_block">
                         <h1>Выбери свой стиль</h1>
                         <div class="buttons_block">
-                            <button class="btm">Мужские</button>
-                            <button class="btm">Женские</button>
+                            <button type="shop_btm" class="btm active">Мужские</button>
+                            <button type="shop_btm" class="btm">Женские</button>
                         </div>
                     </div>
                     <!-- <div class="card_pics">
@@ -103,18 +103,30 @@
                     <!-- Slider main container -->
 
                     <div class="swiper swiper_shop">
-                        
+
 
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
 
                             <!-- Slides -->
 
-                            <div class="swiper-slide"><div class="swiper-img__container"><img class="swiper_image" src="./shop_pics/rewiwes_pics/slider_pics/for.jpeg" alt=""></div></div>
-                            <div class="swiper-slide"><div class="swiper-img__container"><img class="swiper_image" src="./shop_pics/rewiwes_pics/slider_pics/second.jpeg" alt=""></div></div>
-                            <div class="swiper-slide"><div class="swiper-img__container"><img class="swiper_image" src="./shop_pics/rewiwes_pics/slider_pics/three.jpeg" alt=""></div></div>
-                            <div class="swiper-slide"><div class="swiper-img__container"><img class="swiper_image" src="./shop_pics/rewiwes_pics/slider_pics/five.jpeg" alt=""></div></div>
-                        
+                            <div class="swiper-slide">
+                                <div class="swiper-img__container"><img class="swiper_image"
+                                        src="./shop_pics/rewiwes_pics/slider_pics/for.jpeg" alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-img__container"><img class="swiper_image"
+                                        src="./shop_pics/rewiwes_pics/slider_pics/second.jpeg" alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-img__container"><img class="swiper_image"
+                                        src="./shop_pics/rewiwes_pics/slider_pics/three.jpeg" alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-img__container"><img class="swiper_image"
+                                        src="./shop_pics/rewiwes_pics/slider_pics/five.jpeg" alt=""></div>
+                            </div>
+
                         </div>
 
                         <!-- If we need pagination -->
@@ -124,8 +136,8 @@
                         <div class="swiper-button-prev cl"><i class="fa-solid fa-arrow-left"></i></div>
                         <div class="swiper-button-next cl"><i class="fa-solid fa-arrow-right"></i></i></div>
 
-                   
-                            
+
+
                         <!-- If we need scrollbar -->
                         <div class="swiper-scrollbar"></div>
 
@@ -134,155 +146,307 @@
 
 
                 </div>
-        </section>
-        <section class="pupular_products">
-            <div class="container">
-                <h2 class="catalog_maintext ">
-                    Популярные товары
-                </h2>
-                
-                <div class="popular_cards">
-                    <div class="row">
+                <div class="shop_toogle_section">
+                    <div class="pupular_products">
+                        <div class="container">
+                            <h2 class="catalog_maintext ">
+                                Популярные товары
+                            </h2>
+
+                            <div class="popular_cards">
+                                <div class="row">
 
 
-                        <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
-                            <div class="cataog_card">
-                                <img class="card_image" src="./index_pics/sneakers.jpg" alt="">
-                                <a class="url" href="">
-                                    <div class="tovar_inf">
-                                        <span>mariya sneaker</span>
-                                        <div class="buy">$100</div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <img class="card_image" src="./index_pics/sneakers.jpg" alt="">
+                                            <a class="url" href="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </a>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <img class="card_image" src="./index_pics/hoodie.jpg" alt="">
+                                            <a class="url" href="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./t-shirt_page.html">
+                                                <img class="card_image" src="./index_pics/t-shirt.jpg" alt="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+
                         </div>
-                        <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
-                            <div class="cataog_card">
-                                <img class="card_image" src="./index_pics/hoodie.jpg" alt="">
-                                <a class="url" href="">
-                                    <div class="tovar_inf">
-                                        <span>mariya sneaker</span>
-                                        <div class="buy">$100</div>
+
+                    </div>
+                    <div class="main_products">
+                        <div class="container">
+                            <h2 class="catalog_maintext ">
+                                Часто покупаемые товары
+                            </h2>
+                            <div class="popular_cards">
+                                <div class="row">
+
+
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <img class="card_image" src="./index_pics/t-shirt.jpg" alt="">
+                                            <a class="url" href="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
-                            <div class="cataog_card">
-                                <img class="card_image" src="./index_pics/t-shirt.jpg" alt="">
-                                <a class="url" href="">
-                                    <div class="tovar_inf">
-                                        <span>mariya sneaker</span>
-                                        <div class="buy">$100</div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <img class="card_image" src="./index_pics/hoodie.jpg" alt="">
+                                            <a class="url" href="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </a>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <img class="card_image" src="./index_pics/hoodie.jpg" alt="">
+                                            <a class="url" href="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+
                         </div>
                     </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="main_products">
-            <div class="container">
-                <h2 class="catalog_maintext ">
-                    Часто покупаемые товары
-                </h2>
-                <div class="popular_cards">
-                    <div class="row">
+                    <div class="tovars_skidka">
+                        <div class="container">
+                            <h2 class="catalog_maintext ">
+                                Товары со скидкой
+                            </h2>
+                            <div class="popular_cards">
+                                <div class="row">
 
 
-                        <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
-                            <div class="cataog_card">
-                                <img class="card_image" src="./index_pics/t-shirt.jpg" alt="">
-                                <a class="url" href="">
-                                    <div class="tovar_inf">
-                                        <span>mariya sneaker</span>
-                                        <div class="buy">$100</div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <img class="card_image" src="./index_pics/hoodie.jpg" alt="">
+                                            <a class="url" href="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
-                            <div class="cataog_card">
-                                <img class="card_image" src="./index_pics/hoodie.jpg" alt="">
-                                <a class="url" href="">
-                                    <div class="tovar_inf">
-                                        <span>mariya sneaker</span>
-                                        <div class="buy">$100</div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <img class="card_image" src="./index_pics/t-shirt.jpg" alt="">
+                                            <a class="url" href="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
-                            <div class="cataog_card">
-                                <img class="card_image" src="./index_pics/hoodie.jpg" alt="">
-                                <a class="url" href="">
-                                    <div class="tovar_inf">
-                                        <span>mariya sneaker</span>
-                                        <div class="buy">$100</div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <img class="card_image" src="./index_pics/t-shirt.jpg" alt="">
+                                            <a class="url" href="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </a>
+                                </div>
+
                             </div>
+
                         </div>
                     </div>
-
                 </div>
+                <div class="shop_toogle_section">
+                    <div class="pupular_products">
+                        <div class="container">
+                            <h2 class="catalog_maintext ">
+                                Популярные товары
+                            </h2>
 
-            </div>
-        </section>
-
-        <section class="tovars_skidka">
-            <div class="container">
-                <h2 class="catalog_maintext ">
-                    Товары со скидкой
-                </h2>
-                <div class="popular_cards">
-                    <div class="row">
+                            <div class="popular_cards">
+                                <div class="row">
 
 
-                        <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
-                            <div class="cataog_card">
-                                <img class="card_image" src="./index_pics/hoodie.jpg" alt="">
-                                <a class="url" href="">
-                                    <div class="tovar_inf">
-                                        <span>mariya sneaker</span>
-                                        <div class="buy">$100</div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <img class="card_image" src="./index_pics/sneakers.jpg" alt="">
+                                            <a class="url" href="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </a>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <img class="card_image" src="./index_pics/hoodie.jpg" alt="">
+                                            <a class="url" href="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./t-shirt_page.html">
+                                                <img class="card_image" src="./index_pics/t-shirt.jpg" alt="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+
                         </div>
-                        <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
-                            <div class="cataog_card">
-                                <img class="card_image" src="./index_pics/t-shirt.jpg" alt="">
-                                <a class="url" href="">
-                                    <div class="tovar_inf">
-                                        <span>mariya sneaker</span>
-                                        <div class="buy">$100</div>
+
+                    </div>
+                    <div class="main_products">
+                        <div class="container">
+                            <h2 class="catalog_maintext ">
+                                Часто покупаемые товары
+                            </h2>
+                            <div class="popular_cards">
+                                <div class="row">
+
+
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <img class="card_image" src="./index_pics/t-shirt.jpg" alt="">
+                                            <a class="url" href="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
-                            <div class="cataog_card">
-                                <img class="card_image" src="./index_pics/t-shirt.jpg" alt="">
-                                <a class="url" href="">
-                                    <div class="tovar_inf">
-                                        <span>mariya sneaker</span>
-                                        <div class="buy">$100</div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <img class="card_image" src="./index_pics/hoodie.jpg" alt="">
+                                            <a class="url" href="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </a>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <img class="card_image" src="./index_pics/hoodie.jpg" alt="">
+                                            <a class="url" href="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+
                         </div>
                     </div>
+                    <div class="tovars_skidka">
+                        <div class="container">
+                            <h2 class="catalog_maintext ">
+                                Товары со скидкой
+                            </h2>
+                            <div class="popular_cards">
+                                <div class="row">
 
+
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <img class="card_image" src="./index_pics/hoodie.jpg" alt="">
+                                            <a class="url" href="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <img class="card_image" src="./index_pics/t-shirt.jpg" alt="">
+                                            <a class="url" href="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <img class="card_image" src="./index_pics/t-shirt.jpg" alt="">
+                                            <a class="url" href="">
+                                                <div class="tovar_inf">
+                                                    <span>mariya sneaker</span>
+                                                    <div class="buy">$100</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-
             </div>
+
+
         </section>
+
 
         <!-- <section class="reviews_section">
             <div class="container">

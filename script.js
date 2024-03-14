@@ -6,7 +6,7 @@ const burgerMenu = () => {
     const burgerSpan = document.querySelector('#burgerSpan');
 
     burgerBtn.addEventListener('click', (e) => {
-        burgerContainer.classList.toggle('open');   
+        burgerContainer.classList.toggle('open');
         burgerSpan.classList.toggle('btn-open-animation');
     });
 
@@ -28,10 +28,11 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     slidesPerView: 1,
 
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
+    // Autoplay
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
 
     // Navigation arrows
     navigation: {
@@ -61,4 +62,30 @@ const swiper_profile = new Swiper('.swiper_profile', {
 });
 
 
+// SHOP TAB SCRIPT // 
+
+const shopBtms = document.querySelectorAll(".buttons_block button");
+// console.log(shopBtms);
+const shopItems = document.querySelectorAll(".shop_toogle_section");
+// console.log(shopItems);
+
+
+function hideShop () {
+    shopItems.forEach(item => item.classList.add("hide_shop"));
+    shopBtms.forEach(item => item.classList.remove("active"));
+}
+
+function showShop(index) {
+    shopItems[index].classList.remove("hide_shop");
+    shopBtms[index].classList.add("active");
+
+}
+
+hideShop(); 
+showShop(0);
+
+shopBtms.forEach((btn, index) => btn.addEventListener("click", () => {
+    hideShop(); 
+    showShop(index);
+}));
 

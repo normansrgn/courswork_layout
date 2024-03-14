@@ -183,3 +183,28 @@
     display: flex;
     align-items: center;
 }
+
+.hide_shop {
+    display: none;
+}
+
+.active {
+    background-color: #bb9dde;;
+    color: #150b19;
+    display: block;
+}
+
+
+.shop_toogle_section {
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
