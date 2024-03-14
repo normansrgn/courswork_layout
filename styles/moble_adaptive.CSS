@@ -50,8 +50,7 @@
     }
 
 
-    .cataog_card {
-    }
+    .cataog_card {}
 
 
 
@@ -306,88 +305,109 @@
 }
 
 
-
-@media (max-width: 700px) {
-    .reviwes_block {
-        display: flex;
-        flex-direction: column;
-        /* gap: 30px; */
-        gap: 50px;
+@media (max-width:973px) {
+    .tovar_information_block {
+        margin-right: 0px;
+        margin-left: 0px;
     }
 
-    .reviwes_main_block h1 {
-        text-align: center;
-        font-size: 32px;
+
+    @media (max-width: 700px) {
+        .reviwes_block {
+            display: flex;
+            flex-direction: column;
+            /* gap: 30px; */
+            gap: 50px;
+        }
+
+        .reviwes_main_block h1 {
+            text-align: center;
+            font-size: 32px;
+        }
+    }
+
+
+
+
+    /* SIGN IN LAYOUT */
+
+    @media (max-width: 720px) {
+        .sign_lay {
+            width: 280px
+        }
+
+        .form_main_text h1 {
+            font-size: 35px;
+        }
+
+        .form_main_text div {
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: 472px) {
+        .form_main_text h1 {
+            font-size: 33px;
+        }
+
+        .form_main_text div {
+            font-size: 14px;
+        }
+
+    }
+
+    @media (max-width: 400px) {
+        .form_main_text h1 {
+            font-size: 25px;
+        }
+
+        .form_main_text div {
+            font-size: 12px;
+        }
+
+        .sign_lay {
+            width: 246px;
+        }
+
+    }
+
+    /* PROFILE ADAPTIVE */
+
+    @media (max-width: 609px) {}
+
+    @media (max-width: 581px) {
+        .card_inf {
+            font-size: 13px;
+        }
+
+
+        .card_text_block span {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 581px) {
+        .card_inf {
+            font-size: 11px;
+        }
+
+        .foot_nav_link {
+            font-size: 8px;
+        }
+
+        .tovar_visit {
+            width: 400px;
+            flex-direction: column;
+        }
+
+        .item {
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .back_item {
+            justify-content: start;
+        }
     }
 }
-
-
-
-
-/* SIGN IN LAYOUT */
-
-@media (max-width: 720px) {
-    .sign_lay {
-        width: 280px
-    }
-
-    .form_main_text h1 {
-        font-size: 35px;
-    }
-    .form_main_text div {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 472px) {
-    .form_main_text h1 {
-        font-size: 33px;
-    }
-
-    .form_main_text div {
-        font-size: 14px;
-    }
-
-}
-
-@media (max-width: 400px) {
-    .form_main_text h1 {
-        font-size: 25px;
-    }
-
-    .form_main_text div {
-        font-size: 12px;
-    }
-
-    .sign_lay {
-        width: 246px;
-    }
-
-}
-
-/* PROFILE ADAPTIVE */
-
-@media (max-width: 609px) {
-
-
-}
-
-@media (max-width: 581px) {
-    .card_inf {
-        font-size: 13px;
-    }
-    
-    
-.card_text_block span {
-    font-size: 16px;
-}
-}
-
-@media (max-width: 581px) {
-    .card_inf {
-        font-size: 11px;
-    }
-}
-
-
-
