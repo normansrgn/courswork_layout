@@ -396,18 +396,27 @@
         }
 
         .tovar_visit {
-            width: 400px;
+            /* width: 400px; */
             flex-direction: column;
         }
 
         .item {
-            width: 400px;
+            /* width: 400px; */
             margin-left: auto;
             margin-right: auto;
         }
 
         .back_item {
             justify-content: start;
+        }
+
+        .item_image_tshirt {
+            width: 80%;
+        }
+
+        .image_gapar {
+            max-width: 100%;;
+         
         }
     }
 }
