@@ -300,6 +300,12 @@
     }
 }
 
+@media (max-width: 1219px) {
+    .swiper-horizontal {
+        display: none;
+    }
+}
+
 @media (max-width: 862px) {
     .card_pics {
         display: none;
