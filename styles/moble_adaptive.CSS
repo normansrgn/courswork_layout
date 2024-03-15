@@ -123,6 +123,10 @@
 }
 
 @media (max-width: 986px) {
+
+    .basket_list {
+        align-items: center;
+    }
     .burger_menu {
         display: block;
     }
@@ -441,3 +445,20 @@
 
 /* ////÷ */
 
+
+
+/* BASKET  */
+
+@media (max-width: 739px ) {
+    .promocode_input {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        align-items: center;
+    }
+
+    .apply_promocode {
+        width: 491px;
+        max-width: 100%;
+    }
+}
