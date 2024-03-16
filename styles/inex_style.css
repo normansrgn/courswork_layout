@@ -493,7 +493,7 @@ main {
 .foot_navigation {
     gap: 25px;
     flex-wrap: wrap;
-    padding-bottom: 70px;
+    padding-bottom: 25px;
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
