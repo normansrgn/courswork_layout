@@ -1,0 +1,196 @@
+
+/* PROFILE NAVIGATION */
+
+.profile_detal_nav h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.profile_detal_nav span {
+    font-size: 18px;
+}
+
+.profile_detals {
+    padding: 60px;
+
+}
+
+.profile_detal_nav {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 15px;
+}
+
+.prof_nav_buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.prof_btm {
+    width: 180px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.prof_button {
+    color: #ece5fb;
+    background-color: #1e142a;
+    transition: 0.2s ease;
+
+}
+
+.prof_button:hover {
+    background-color: #ece5fb;
+    cursor: pointer;
+    color: #1e142a;
+    transition: 0.2s ease;
+
+}
+
+/* PROFILE INFORMATION */
+.profil_information_cards {
+    padding-top: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.prof_inf_card {
+    display: flex;
+    width: 520px;
+    height: 150px;
+    background-color: #160b20;
+    border-radius: 6px;
+    max-width: 100%;
+
+}
+
+.prof_card_image {
+    padding: 16px 0 0 16px;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.card_text_block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 16px;
+}
+
+.prof_name {
+    font-size: 22px;
+}
+
+.card_text_block span {
+    font-size: 18px;
+}
+
+.card_inf {
+    font-size: 16px;
+}
+
+/* ORDER BLOCK */
+
+.profil_small_text {
+    text-align: center;
+    font-size: 18px;
+}
+
+.oreder_sectiontext {
+    margin-bottom: 44px;
+}
+
+.user_orders_section {
+    padding-bottom: 60px;
+    border-bottom: 1px solid #0f000eac;
+
+
+}
+
+
+/* SAVED ITEMS */
+
+.save_item_section {
+    padding-top: 60px;
+}
+
+.saved_nav {
+}
+
+.saved_tovar {
+    height: 70px;
+    width: 295px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #160b20;
+    display: flex;
+    gap: 16px;
+}
+
+.item_image {
+    padding: 5px 0 0 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.saved_item_information {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.saved_nameprice {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.item_date {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.saved_tovar_list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.icons_basket {
+    display: flex;
+    gap: 30px;
+}
+
+.swiper_profile {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+}
+
+.prof_slide_fl {
+    align-items: center;
+    /* gap: 5px; */
+    display: flex;
+}
+
+.fa-arrow-right {
+    display: block;
+}
+
+
+@media (max-width: 1369px) {
+    .fa-solid, .fas{
+        display: none;
+    }
+
+}

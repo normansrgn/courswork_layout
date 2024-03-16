@@ -1,0 +1,87 @@
+.tovar_information_block {
+    margin-right: 150px;
+    margin-left: 150px;
+    padding-top: 60px;
+}
+
+.item_image_tshirt {
+    width: 100%;
+    /* height: 604px; */
+    border-radius: 8px;
+}
+
+.tovar_visit {
+    display: flex;
+    gap: 20px;
+  
+}
+
+
+.image_gapar {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_information_block {
+
+    gap: 17px;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-basket_tovar_block h1 {
+
+    font-size: 20px;
+}
+
+.add-basket_tovar_block {
+
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    border-radius: 16px;
+
+}
+
+.add-basket_tovar_block span {
+    font-size: 24px;
+    color: aliceblue;
+}
+
+.item_basket_btm {
+    width: 200px;
+    height: 50px;
+   transition: 0.2s ease;
+
+    border: 0px;
+    font-size: 16px;
+    color: aliceblue;
+    border-radius: 12px;
+    background-color: #1e142a;
+}
+
+.item_basket_btm:hover {
+   transition: 0.2s ease;
+    color: #1e142a;
+    cursor: pointer;
+    background-color:#ffeefe;
+}
+
+
+.see_more_link {
+    padding-left: 10px;
+    padding-top: 35px;
+    font-size: 24px;
+    /* font-weight: bold; */
+}
+
+.back_item {
+    padding-top: 8px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}

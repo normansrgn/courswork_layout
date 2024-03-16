@@ -9,37 +9,85 @@
     <link rel="stylesheet" href="./styles/swiper.css">
     <link rel="stylesheet" href="./styles/inex_style.css">
     <link rel="stylesheet" href="./styles/shop.css">
-
+    <!-- <link rel="stylesheet" href="./styles/burgermenu.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/moble_adaptive.CSS">
+    <link rel="shortcut icon" type="image/x-icon" href="./index_pics/logo.svg">
 
     <title>Coursework</title>
 </head>
 
 <body>
     <header class="header_section">
-        <div class="container">
+        <div class="container header_container">
             <div class="header_flex">
 
                 <div class="logo_secton">
                     <div class="logo">
                         <a class="url" href="./index.html">
-                            <!-- <img src="./index_pics/logo.svg" alt=""> -->
+                            <div class=""><img class="logo_svg" src="./index_pics/logo.svg" alt=""></div>
+                        </a>
                     </div>
-                    <span class="log_text"> Anti-Meriya</span></a>
+                    <!-- <span class="log_text"> Anti-Meriya</span>-->
                 </div>
 
-                <div class="nav_bar">
+                <nav class="nav_bar hidden">
                     <ul class="navigation_item">
                         <li> <a href="./index.html" class="navigation_link">Home</a></li>
-                        <li> <a href="" class="navigation_link">Shop</a></li>
-                        <li> <a href="" class="navigation_link">About</a></li>
-                        <li> <a href="" class="navigation_link">Contact</a></li>
+                        <li> <a href="./shop.html" class="navigation_link">Shop</a></li>
+                        <li> <a href="./aboutus.html" class="navigation_link">About</a></li>
+                        <!-- <li> <a href="" class="navigation_link">Contact</a></li> -->
 
                     </ul>
+                </nav>
+
+                <nav class="nav_bar hidden">
+                    <ul class="navigation_item">
+                        <li> <a href="./profile.html" class="navigation_link"><i class="fa-regular fa-user"></i></a>
+                        </li>
+                        <li> <a href="./basket.html" class="navigation_link"><i
+                                    class="fa-solid fa-basket-shopping"></i></a></li>
+                        <li> <a href="./log_in.html" class="navigation_link">Log In</a></li>
+
+
+
+                    </ul>
+                </nav>
+
+
+                <div class="burger_menu">
+
+                    <button id="burger__btn" type="button">
+                        <span id="burgerSpan"></span>
+                    </button>
+                    <aside class="burger__container">
+                        <div class="burger__content">
+                            <nav class="nav_bar burger_nav">
+                                <ul class="navigation_item">
+                                    <div class="icons_basket">
+                                        <li> <a href="./profile.html" class="navigation_link"><i
+                                                    class="fa-regular fa-user"></i></a></li>
+                                        <li> <a href="./basket.html" class="navigation_link"><i
+                                                    class="fa-solid fa-basket-shopping"></i></a></li>
+
+                                    </div>
+                                    <li> <a href="./index.html" class="navigation_link">Home</a></li>
+                                    <li> <a href="./shop.html" class="navigation_link">Shop</a></li>
+                                    <li> <a href="./aboutus.html" class="navigation_link">About</a></li>
+                                    <!-- <li> <a href="" class="navigation_link">Contact</a></li> -->
+                                    <li> <a href="./log_in.html" class="navigation_link">Log In</a></li>
+
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </aside>
                 </div>
             </div>
+
         </div>
     </header>
+
     <main>
         <section class="choose_section">
             <div class="container">
@@ -47,69 +95,406 @@
                     <div class="text_block">
                         <h1>Выбери свой стиль</h1>
                         <div class="buttons_block">
-                            <button class="btm">Мужские</button>
-                            <button class="btm">Женские</button>
+                            <button type="shop_btm" class="btm active">Мужские</button>
+                            <button type="shop_btm" class="btm">Женские</button>
                         </div>
                     </div>
-                    <div class="card_pics">
+                    <!-- <div class="card_pics">
+                    </div> -->
+                    <!-- Slider main container -->
+
+                    <div class="swiper swiper_shop">
+
+
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+
+                            <!-- Slides -->
+
+                            <div class="swiper-slide">
+                                <div class="swiper-img__container"><img class="swiper_image"
+                                        src="./shop_pics/rewiwes_pics/slider_pics/for.jpeg" alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-img__container"><img class="swiper_image"
+                                        src="./shop_pics/rewiwes_pics/slider_pics/second.jpeg" alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-img__container"><img class="swiper_image"
+                                        src="./shop_pics/rewiwes_pics/slider_pics/three.jpeg" alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-img__container"><img class="swiper_image"
+                                        src="./shop_pics/rewiwes_pics/slider_pics/five.jpeg" alt=""></div>
+                            </div>
+
+                        </div>
+
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev cl"><i class="fa-solid fa-arrow-left"></i></div>
+                        <div class="swiper-button-next cl"><i class="fa-solid fa-arrow-right"></i></i></div>
+
+
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
 
                     </div>
 
                 </div>
+                <div class="shop_toogle_section">
+                    <div class="pupular_products">
+                        <div class="container">
+                            <h2 class="catalog_maintext ">
+                                Популярные товары
+                            </h2>
+
+                            <div class="popular_cards">
+                                <div class="row">
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a href="./meriya_black.html"> <img class="card_image"
+                                                    src="./shop_pics/shearts_tovars/three .jpg" alt=""></a>
+                                            <a class="url" href="./t-shirt_page.html">
+                                                <div class="tovar_inf">
+                                                    <span>MERIYA BLACK</span>
+                                                    <div class="buy">2 100Р</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./hoodie_pages/stussy_zip.html"> <img class="card_image"
+                                                    src="./shop_pics/hoodie_img/stussy_zip.jpg" alt="">
+                                            
+                                                <div class="tovar_inf">
+                                                    <span>ЗИП-ХУДИ STUSSY
+                                                    </span>
+                                                    <div class="buy">3 490P</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./sneakers_pages/DC.html"> <img class="card_image"
+                                                    src="./shop_pics/sneakers_img/DC.jpg" alt="">
+        
+                                                <div class="tovar_inf">
+                                                    <span>DC </span>
+                                                    <div class="buy">6 190Р</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_products">
+                        <div class="container">
+                            <h2 class="catalog_maintext ">
+                                Часто покупаемые товары
+                            </h2>
+                            <div class="popular_cards">
+                                <div class="row">
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./hoodie_pages/hoodie_gap.html"> <img class="card_image"
+                                                    src="./shop_pics/hoodie_img/hoodie_gap.jpg" alt="">
+                                            
+                                                <div class="tovar_inf">
+                                                    <span>ХУДИ GAP</span>
+                                                    <div class="buy">3 390P</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./sneakers_pages/okai.html"> <img class="card_image"
+                                                    src="./shop_pics/sneakers_img/okai_black.jpg" alt="">
+        
+                                                <div class="tovar_inf">
+                                                    <span>OKAI BLACK </span>
+                                                    <div class="buy">6 490Р</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./sneakers_pages/nike_air_forceLow.html"> <img
+                                                    class="card_image" src="./shop_pics/sneakers_img/nike_air_force1_low.jpg"
+                                                    alt="">
+        
+                                                <div class="tovar_inf">
+                                                    <span>NIKE AIR FORCE 1 LOW </span>
+                                                    <div class="buy">5 990Р</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tovars_skidka">
+                        <div class="container">
+                            <h2 class="catalog_maintext ">
+                                Товары со скидкой
+                            </h2>
+                            <div class="popular_cards">
+                                <div class="row">
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./hoodie_pages/carhart_hoodie.html"> <img class="card_image"
+                                                    src="./shop_pics/hoodie_img/carhart_hoodie.jpg" alt="">
+                                            
+                                                <div class="tovar_inf">
+                                                    <span>ЗИП ХУДИ CARHARTT</span>
+                                                    <div class="buy">4 490P</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./hoodie_pages/hoodie_polar.html"> <img class="card_image"
+                                                    src="./shop_pics/hoodie_img/hoodie_polar.jpg" alt="">
+                                            
+                                                <div class="tovar_inf">
+                                                    <span>ХУДИ POLAR</span>
+                                                    <div class="buy">3 390P</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./sneakers_pages/DC.html"> <img class="card_image"
+                                                    src="./shop_pics/sneakers_img/DC.jpg" alt="">
+        
+                                                <div class="tovar_inf">
+                                                    <span>DC </span>
+                                                    <div class="buy">6 190Р</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_toogle_section">
+                    <div class="pupular_products">
+                        <div class="container">
+                            <h2 class="catalog_maintext ">
+                                Популярные товары
+                            </h2>
+
+                            <div class="popular_cards">
+                                <div class="row">
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./champion_pink.html"> <img class="card_image"
+                                                    src="./shop_pics/shearts_tovars/six.jpg" alt="">
+                                            
+                                                <div class="tovar_inf">
+                                                    <span>CHAMPION PINK</span>
+                                                    <div class="buy">2 670Р</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./adidas_purple.html"> <img class="card_image"
+                                                    src="./shop_pics/shearts_tovars/11.jpg" alt="">
+                                           
+                                                <div class="tovar_inf">
+                                                    <span>ADIDAS PURPLE</span>
+                                                    <div class="buy">3 000P</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./sneakers_pages/nike_air1.html"> <img class="card_image"
+                                                    src="./shop_pics/sneakers_img/nike_air_force_1.jpg" alt="">
+        
+                                                <div class="tovar_inf">
+                                                    <span>NIKE AIR FORCE 1 </span>
+                                                    <div class="buy">2 990Р</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="main_products">
+                        <div class="container">
+                            <h2 class="catalog_maintext ">
+                                Часто покупаемые товары
+                            </h2>
+                            <div class="popular_cards">
+                                <div class="row">
 
 
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./casca.html"> <img class="card_image"
+                                                    src="./shop_pics/shearts_tovars/seven.jpg" alt="">
+                                                <div class="tovar_inf">
+                                                    <span>CASCA</span>
+                                                    <div class="buy">2 450P</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./stussy purple.html"> <img class="card_image"
+                                                    src="./shop_pics/shearts_tovars/ten.jpg" alt="">
+                                            
+                                                <div class="tovar_inf">
+                                                    <span>STUSSY PURPLE</span>
+                                                    <div class="buy">4 600P</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./sneakers_pages/adidas_bad_bunny.html"> <img class="card_image"
+                                                    src="./shop_pics/sneakers_img/adidas_bad_bunny.jpg" alt="">
+        
+                                                <div class="tovar_inf">
+                                                    <span>ADIDAS BAD BUNNY </span>
+                                                    <div class="buy">6 590Р</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tovars_skidka">
+                        <div class="container">
+                            <h2 class="catalog_maintext ">
+                                Товары со скидкой
+                            </h2>
+                            <div class="popular_cards">
+                                <div class="row">
+
+
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./palm_angels.html"> <img class="card_image"
+                                                    src="./shop_pics/shearts_tovars/12.jpg" alt="">
+                                                <div class="tovar_inf">
+                                                    <span>Palm Angels </span>
+                                                    <div class="buy">1 990Р</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./hoodie_pages/hoodie_palm_angels.html"> <img class="card_image"
+                                                    src="./shop_pics/hoodie_img/hoodie_palm_angels.jpg" alt="">
+                                            
+                                                <div class="tovar_inf">
+                                                    <span>ХУДИ PALM ANGELS </span>
+                                                    <div class="buy">6 990P</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                                        <div class="cataog_card">
+                                            <a class="url" href="./hoodie_pages/hoodie_nike_orange.html"> <img class="card_image"
+                                                    src="./shop_pics/hoodie_img/nike_orange.jpg" alt="">
+                                            
+                                                <div class="tovar_inf">
+                                                    <span>ХУДИ NIKE </span>
+                                                    <div class="buy">5 990P</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
         </section>
-        <section class="pupular_products">
+
+
+        <!-- <section class="reviews_section">
             <div class="container">
-                <h2 class="catalog_maintext ">
-                    Популярные товары
-                </h2>
-                <div class="popular_cards">
-                    <div class="row">
+                <div class="reviwes_main_block">
+                    <div class="text_block reviwes_text">
+                        <h1>Отзывы клиентов</h1>
 
+                    </div>
+                    <div class="reviwes_block">
+                        <div class="reviwes_card">
+                            <div class="user_name_and_estimation">
+                                <span>John Doe</span>
+                                <img src="./shop_pics/rewiwes_pics/estimation.svg" alt="">
+                            </div>
+                            <div class="reviews_card_text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <div class="reaction_block">
+                                <img src="./instagram_section_pics/like.png" alt="">
+                                <img src="./instagram_section_pics/comment.png" alt="">
+                            </div>
 
-                        <div class="col-xxl-4 col-lg-12">
-                            <div class="cataog_card">
-                                <img class="card_image" src="./index_pics/sneakers.jpg" alt="">
-                                <a class="url" href="">
-                                    <div class="tovar_inf">
-                                        <span>mariya sneaker</span>
-                                        <div class="buy">$100</div>
-                                    </div>
-                                </a>
-                            </div>
                         </div>
-                        <div class="col-xxl-4 col-lg-12">
-                            <div class="cataog_card">
-                                <img class="card_image" src="./index_pics/sneakers.jpg" alt="">
-                                <a class="url" href="">
-                                    <div class="tovar_inf">
-                                        <span>mariya sneaker</span>
-                                        <div class="buy">$100</div>
-                                    </div>
-                                </a>
+                        <div class="reviwes_card">
+                            <div class="user_name_and_estimation">
+                                <span>John Doe</span>
+                                <img src="./shop_pics/rewiwes_pics/estimation.svg" alt="">
                             </div>
-                        </div>
-                        <div class="col-xxl-4 col-lg-12">
-                            <div class="cataog_card">
-                                <img class="card_image" src="./index_pics/sneakers.jpg" alt="">
-                                <a class="url" href="">
-                                    <div class="tovar_inf">
-                                        <span>mariya sneaker</span>
-                                        <div class="buy">$100</div>
-                                    </div>
-                                </a>
+                            <div class="reviews_card_text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </div>
+                            <div class="reaction_block">
+                                <img src="./instagram_section_pics/like.png" alt="">
+                                <img src="./instagram_section_pics/comment.png" alt="">
+                            </div>
+
                         </div>
                     </div>
 
                 </div>
-
             </div>
-
-        </section>
-
+        </section> -->
 
     </main>
 
@@ -126,6 +511,10 @@
         </div>
     </footer>
 
+    <script src="https://kit.fontawesome.com/0bfd97b8fd.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 

@@ -1,53 +1,8 @@
-@media (max-width: 768px) {
-    .hello_text {
-        font-size: 25px;
-    }
-
-    .small_hellotext {
-        font-size: 18px;
-    }
-
-
-}
-
-@media (max-width: 992px) {
-    .hello_text {
-        font-size: 25px;
-    }
-
-    .small_hellotext {
-        font-size: 18px;
-    }
-
-    .input_subs {
-        width: 243px;
-    }
-
-
-
-
-    .card_main_text {
-        font-size: 15px;
-    }
-
-    .cloth_catalog {
-        padding-bottom: 1px;
-    }
-
-
-}
-
-@media (max-width: 1200px) {}
-
+/* HOME LAYOUT */
 @media (max-width: 1400px) {
-    .inst_post_card {
-        height: 473px;
-        width: 360px;
-    }
 
-    .inst_image {
-        width: 360px;
-        height: 360px;
+    .instagram_flex {
+        display: block;
     }
 
 
@@ -123,8 +78,113 @@
         flex-direction: column;
     }
 
+    .catalog_cloth_cards {
+        display: flex;
+        justify-content: center;
+    }
 }
 
+@media (max-width: 992px) {
+    .hello_text {
+        font-size: 22px;
+    }
+
+    .small_hellotext {
+        font-size: 18px;
+    }
+
+    .input_subs {
+        width: 243px;
+    }
+
+    .header_flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+
+
+    .card_main_text {
+        font-size: 15px;
+    }
+
+    .cloth_catalog {
+        padding-bottom: 1px;
+    }
+
+    .header_container {
+        padding: 20px;
+    }
+
+
+
+}
+
+@media (max-width: 986px) {
+
+    .basket_list {
+        align-items: center;
+    }
+    .burger_menu {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .navigation_item {
+        padding-top: 66px;
+        font-size: 35px;
+        flex-direction: column;
+        gap: 37px;
+    }
+
+
+}
+
+@media (max-width: 986px) {
+    .foot_container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+@media (max-width: 768px) {
+    .hello_text {
+        font-size: 23px;
+        text-align: start;
+    }
+
+    .small_hellotext {
+        font-size: 18px;
+        text-align: start;
+    }
+
+    .hello_btm {
+        text-align: start;
+    }
+
+    .card_icons {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 704px) {
+    .inst_post-card {
+        
+        gap: 20px;
+    }
+}
+
+@media (max-width: 654px) {
+    .foot_navigation {
+        padding-bottom: 0px;
+    }
+}
 @media (max-width: 576px) {
 
     .container,
@@ -149,11 +209,11 @@
 
     .navigation_item {
         flex-direction: column;
-        gap: 3px;
+       
     }
 
     .logo_secton {
-        gap: 53px;
+        gap: 0px;
     }
 
     .mini_card {
@@ -175,9 +235,7 @@
     }
 
 
-    .cataog_card {
-        margin-left: 16px;
-    }
+    .cataog_card {}
 
 
 
@@ -234,4 +292,188 @@
         font-size: 16px;
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+/* SHOP LAYOUT */
+
+
+@media (max-width: 1400px) {
+    .reviwes_main_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .map_style {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 1219px) {
+    .swiper-horizontal {
+        display: none;
+    }
+}
+
+@media (max-width: 862px) {
+    .card_pics {
+        display: none;
+    }
+
+    .main_block h1 {
+        font-size: 70px;
+    }
+
+    .main_block {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+
+@media (max-width:973px) {
+    .tovar_information_block {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+
+    @media (max-width: 700px) {
+        .reviwes_block {
+            display: flex;
+            flex-direction: column;
+            /* gap: 30px; */
+            gap: 50px;
+        }
+
+        .reviwes_main_block h1 {
+            text-align: center;
+            font-size: 32px;
+        }
+    }
+
+
+
+
+    /* SIGN IN LAYOUT */
+
+    @media (max-width: 720px) {
+        .sign_lay {
+            width: 280px
+        }
+
+        .form_main_text h1 {
+            font-size: 35px;
+        }
+
+        .form_main_text div {
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: 472px) {
+        .form_main_text h1 {
+            font-size: 33px;
+        }
+
+        .form_main_text div {
+            font-size: 14px;
+        }
+
+    }
+
+    @media (max-width: 400px) {
+        .form_main_text h1 {
+            font-size: 25px;
+        }
+
+        .form_main_text div {
+            font-size: 12px;
+        }
+
+        .sign_lay {
+            width: 246px;
+        }
+
+    }
+
+    /* PROFILE ADAPTIVE */
+
+    @media (max-width: 609px) {}
+
+    @media (max-width: 581px) {
+        .card_inf {
+            font-size: 13px;
+        }
+
+
+        .card_text_block span {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 581px) {
+        .card_inf {
+            font-size: 11px;
+        }
+
+        .foot_nav_link {
+            font-size: 8px;
+        }
+
+        .tovar_visit {
+            /* width: 400px; */
+            flex-direction: column;
+        }
+
+        .item {
+            /* width: 400px; */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .back_item {
+            justify-content: start;
+        }
+
+        .item_image_tshirt {
+            width: 80%;
+        }
+
+        .image_gapar {
+            max-width: 100%;;
+         
+        }
+    }
+}
+
+
+/* ////÷ */
+
+
+
+/* BASKET  */
+
+@media (max-width: 739px ) {
+    .promocode_input {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        align-items: center;
+    }
+
+    .apply_promocode {
+        width: 491px;
+        max-width: 100%;
+    }
 }

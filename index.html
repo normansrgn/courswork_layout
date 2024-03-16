@@ -9,33 +9,82 @@
     <link rel="stylesheet" href="./styles/swiper.css">
     <link rel="stylesheet" href="./styles/inex_style.css">
     <link rel="stylesheet" href="./styles/moble_adaptive.CSS">
+    <link rel="stylesheet" href="./styles/burgermenu.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./index_pics/logo.svg">
+    <link rel="shortcut icon" type="image/x-icon" href="./index_pics/logo.svg">
 
-    <title>Coursework</title>
+
+    <title>courswork_layout</title>
 </head>
 
 <body>
     <header class="header_section">
-        <div class="container">
+        <div class="container header_container">
             <div class="header_flex">
 
                 <div class="logo_secton">
                     <div class="logo">
                         <a class="url" href="./index.html">
-                             <!-- <img src="./index_pics/logo.svg" alt=""> -->
+                            <div class=""><img class="logo_svg" src="./index_pics/logo.svg" alt=""></div>
+                        </a>
                     </div>
-                    <span class="log_text"> Anti-Meriya</span></a>
+                    <!-- <span class="log_text"> Anti-Meriya</span>-->
                 </div>
 
-                <div class="nav_bar">
+                <nav class="nav_bar hidden">
                     <ul class="navigation_item">
-                        <li> <a href="" class="navigation_link">Home</a></li>
+                        <li> <a href="./index.html" class="navigation_link">Home</a></li>
                         <li> <a href="./shop.html" class="navigation_link">Shop</a></li>
-                        <li> <a href="" class="navigation_link">About</a></li>
-                        <li> <a href="" class="navigation_link">Contact</a></li>
+                        <li> <a href="./aboutus.html" class="navigation_link">About</a></li>
+                        <!-- <li> <a href="" class="navigation_link">Contact</a></li> -->
 
                     </ul>
+                </nav>
+
+                <nav class="nav_bar hidden">
+                    <ul class="navigation_item">
+                        <li> <a href="./profile.html" class="navigation_link"><i class="fa-regular fa-user"></i></a>
+                        </li>
+                        <li> <a href="./basket.html" class="navigation_link"><i
+                                    class="fa-solid fa-basket-shopping"></i></a></li>
+                        <li> <a href="./log_in.html" class="navigation_link">Log In</a></li>
+
+
+
+                    </ul>
+                </nav>
+
+
+                <div class="burger_menu">
+
+                    <button id="burger__btn" type="button">
+                        <span id="burgerSpan"></span>
+                    </button>
+                    <aside class="burger__container">
+                        <div class="burger__content">
+                            <nav class="nav_bar burger_nav">
+                                <ul class="navigation_item">
+                                    <div class="icons_basket">
+                                        <li> <a href="./profile.html" class="navigation_link"><i
+                                                    class="fa-regular fa-user"></i></a></li>
+                                        <li> <a href="./basket.html" class="navigation_link"><i
+                                                    class="fa-solid fa-basket-shopping"></i></a></li>
+
+                                    </div>
+                                    <li> <a href="./index.html" class="navigation_link">Home</a></li>
+                                    <li> <a href="./shop.html" class="navigation_link">Shop</a></li>
+                                    <li> <a href="./aboutus.html" class="navigation_link">About</a></li>
+                                    <!-- <li> <a href="" class="navigation_link">Contact</a></li> -->
+                                    <li> <a href="./log_in.html" class="navigation_link">Log In</a></li>
+
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </aside>
                 </div>
             </div>
+
         </div>
     </header>
 
@@ -45,191 +94,210 @@
             <div class="container">
 
                 <h1 class="hello_text">
-                    Добро пожаловать на сайт <br> нашего бренда одежды
+                    Добро пожаловать на сайт <br> нашего магаз одежды
                 </h1>
                 <div class="small_hellotext">
                     Ознакомьтесь с нашей коллекцией минималистской <br> одежды
                 </div>
                 <div class="hello_btm">
-                    <a href=""> <button class="btm"> Купить сейчас</button></a>
+                    <a href="./shop.html"> <button class="btm"> Купить сейчас</button></a>
                 </div>
-                <div class="cloth_catalog ">
-                    <h2 class="catalog_maintext ">
-                        Каталог Одежды
-                    </h2>
-                    <div class="container">
-                        <div class="row ">
-                            <div class="col-xxl-4 col-lg-12">
-                                <div class="cataog_card">
-                                    <img class="card_image" src="./index_pics/t-shirt.jpg" alt="">
-                                    <a class="url" href="">
-                                        <div class="card_name">
-                                            Футболки
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-xxl-4 col-lg-12">
-                                <div class="cataog_card">
-                                    <img class="card_image" src="./index_pics/hoodie.jpg" alt="">
-                                    <a class="url" href="">
-                                        <div class="card_name">
-                                            Худи
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-xxl-4 col-lg-12">
-                                <div class="cataog_card">
-                                    <img class="card_image" src="./index_pics/sneakers.jpg" alt="">
-                                    <a class="url" href="">
-                                        <div class="card_name">
-                                            Кроссовки
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-            <section class="whyus_section">
-                <div class="container">
-                    <div class="row">
-                        <div class="promo_card_block">
-
-                            <div class="col-xxl-5 col-lg-12">
-                                <div class="promo_text">
-                                    <h3 class="promo_section_text">Почему выбирают нас?</h3>
-                                    <div class="small_promo_text">
-                                        Чувствуй комфорт и стиль в каждом предмете
-                                    </div>
-                                </div>
+        </div>
+        <section class="cloth_catalog ">
+            <h2 class="catalog_maintext ">
+                Каталог Одежды
+            </h2>
+            <div class="container">
+                <div class="row ">
+                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                        <div class="cataog_card">
+                            <div class="catalog_card-img">
+                                <a href="./t-shirts.html">
+                                    <img class="card_image" src="./index_pics/t-shirt.jpg" alt="">
+                                </a>
                             </div>
-                            <div class="col-xxl-5 col-lg-12">
-                                <div class="mini_cards">
-                                    <div class="mini_card">
-                                        <img class="img_mini_card" src="./index_pics/mini_cards_pics/materials.jpg"
-                                            alt="">
-                                        <div class="card_text">
-                                            <div class="card_main_text">
-                                                Качественные материалы
-                                            </div>
-                                            <div class="card_small_text">
-                                                Мы используем высококачественные ткани для длительного комфорта.
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="mini_card">
-                                        <img class="img_mini_card" src="./index_pics/mini_cards_pics/minimal_design.jpg"
-                                            alt="">
-                                        <div class="card_text">
-                                            <div class="card_main_text">
-                                                Минималистичный дизайн
-                                            </div>
-                                            <div class="card_small_text">
-                                                Наша одежда отличается чистыми линиями и простыми силуэтами.
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="mini_card">
-                                        <img class="img_mini_card" src="./index_pics/mini_cards_pics/stylist.jpg"
-                                            alt="">
-                                        <div class="card_text">
-                                            <div class="card_main_text">
-                                                Универсальные возможности
-                                            </div>
-                                            <div class="card_small_text">
-                                                Комбинируйте наши вещи для создания непринужденного стиля
-                                            </div>
-                                        </div>
-
-                                    </div>
+                            <a class="url" href="./t-shirts.html">
+                                <div class="card_name">
+                                    Футболки
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
-
+                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                        <div class="cataog_card">
+                            <div class="catalog_card-img">
+                                <a href="./hoodie.html">
+                                    <img class="card_image" src="./index_pics/hoodie.jpg" alt="">
+                                </a>
+                            </div>
+                            <a class="url" href="./hoodie.html">
+                                <div class="card_name">
+                                    Худи
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="catalog_cloth_cards col-xxl-4 col-lg-12">
+                        <div class="cataog_card">
+                            <div class="catalog_card-img">
+                                <a href="./sneakers.html">
+                                    <img class="card_image" src="./index_pics/sneakers.jpg" alt="">
+                                </a>
+                            </div>
+                            <a class="url" href="./sneakers.html">
+                                <div class="card_name">
+                                    Кроссовки
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <section class="instagram_section">
-                <div class="container">
-                    <div class="row">
+            </div>
+        </section>
+        <section class="whyus_section">
+            <div class="container">
+                <div class="row">
+                    <div class="promo_card_block">
+
                         <div class="col-xxl-5 col-lg-12">
                             <div class="promo_text">
-                                <h4 class="promo_section_text ">Следите за свежими
-                                    новостями в Instagram</h4>
+                                <h3 class="promo_section_text">Почему выбирают нас?</h3>
+                                <div class="small_promo_text">
+                                    Чувствуй комфорт и стиль в каждом предмете
+                                </div>
                             </div>
                         </div>
+                        <div class="col-xxl-5 col-lg-12">
+                            <div class="mini_cards">
+                                <div class="mini_card">
 
-                        <div class="col-xxl-3 col-lg-12">
-                            <div class="inst_post_card pad">
-                                <img class="inst_image" src="./instagram_section_pics/pos_one.jpg" alt="">
-                                <div class="inst_text_block">
-                                    <div class="main_inst_text">
-                                        Наша новая коллекция #minimaliststyle
+                                    <img class="img_mini_card" src="./index_pics/mini_cards_pics/materials.jpg" alt="">
+                                    <div class="card_text">
+                                        <div class="card_main_text">
+                                            Качественные материалы
+                                        </div>
+                                        <div class="card_small_text">
+                                            Мы используем высококачественные ткани для длительного комфорта.
+                                        </div>
                                     </div>
-                                    <div class="inst_profile_block">
-                                        <div> <img class="inst_logo" src="./index_pics/logo.svg" alt=""> </div>
-                                        <a class="url" href="">
-                                            <div class="inst_nick">antimariya.fashion</div>
-                                        </a>
-                                    </div>
-                                    <div class="navig_inst_block">
-                                        <img src="./instagram_section_pics/like.png" alt="" class="inst_like_icon">
-                                        <img src="./instagram_section_pics/comment.png" alt="" class="inst_like_icon">
 
+                                </div>
+                                <div class="mini_card">
+                                    <img class="img_mini_card" src="./index_pics/mini_cards_pics/minimal_design.jpg"
+                                        alt="">
+                                    <div class="card_text">
+                                        <div class="card_main_text">
+                                            Минималистичный дизайн
+                                        </div>
+                                        <div class="card_small_text">
+                                            Наша одежда отличается чистыми линиями и простыми силуэтами.
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="mini_card">
+                                    <img class="img_mini_card" src="./index_pics/mini_cards_pics/stylist.jpg" alt="">
+                                    <div class="card_text">
+                                        <div class="card_main_text">
+                                            Универсальные возможности
+                                        </div>
+                                        <div class="card_small_text">
+                                            Комбинируйте наши вещи для создания непринужденного стиля
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-3 col-lg-12">
-                            <div class="inst_post_card pad">
-                                <img class="inst_image" src="./instagram_section_pics/post_seconde.jpg" alt="">
-                                <div class="inst_text_block">
-                                    <div class="main_inst_text">
-                                        Simplicity is key! #minimalism
-                                    </div>
-                                    <div class="inst_profile_block">
-                                        <div> <img class="inst_logo" src="./index_pics/logo.svg" alt=""> </div>
-                                        <a class="url" href="">
-                                            <div class="inst_nick">antimariya.fashion</div>
-                                        </a>
-                                    </div>
-                                    <div class="navig_inst_block">
-                                        <img src="./instagram_section_pics/like.png" alt="" class="inst_like_icon">
-                                        <img src="./instagram_section_pics/comment.png" alt="" class="inst_like_icon">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
                     </div>
-
                 </div>
-        </div>
+            </div>
+        </section>
+        <section class="instagram_section">
+            <div class="container">
+                <div class="row">
+                    <div class="instagram_flex ">
+                        <div class="promo_text">
+                            <h4 class="promo_section_text ">Следите за свежими <br>
+                                новостями в Instagram</h4>
+                            <div class="inst_navigation">
+                                <a class="url" href="https://www.instagram.com/normansrgn/"> <i
+                                        class="fa-brands fa-instagram"> anti.meriya</i> </a>
+                            </div>
+                        </div>
+                        <div class="inst_post-card">
+                            <div class="col-xxl-3 ">
+                                <div class="inst_post_card pad">
+                                    <div class="inst_card_image">
+                                        <img class="inst_image" src="./instagram_section_pics/pos_one.jpeg" alt="">
+                                    </div>
+
+                                    <div class="inst_text_block">
+                                        <div class="main_inst_text">
+                                            Наша новая коллекция #minimaliststyle
+                                        </div>
+                                        <div class="inst_profile_block">
+                                            <div> <img class="inst_logo" src="./index_pics/logo.svg" alt=""> </div>
+                                            <a class="url" href="">
+                                                <div class="inst_nick">antimariya.fashion</div>
+                                            </a>
+                                        </div>
+                                        <div class="navig_inst_block">
+                                            <img src="./instagram_section_pics/like.png" alt="" class="inst_like_icon">
+                                            <img src="./instagram_section_pics/comment.png" alt=""
+                                                class="inst_like_icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-lg-12">
+                                <div class="inst_post_card pad">
+                                    <div class="inst_card_image">
+                                        <img class="inst_image" src="./instagram_section_pics/pos_second.jpeg" alt="">
+                                    </div>
+                                    <div class="inst_text_block">
+                                        <div class="main_inst_text">
+                                            Simplicity is key! #minimalism
+                                        </div>
+                                        <div class="inst_profile_block">
+
+                                            <div> <img class="inst_logo" src="./index_pics/logo.svg" alt=""> </div>
+                                            <a class="url" href="">
+                                                <div class="inst_nick">antimariya.fashion</div>
+                                            </a>
+                                        </div>
+                                        <div class="navig_inst_block">
+                                            <img src="./instagram_section_pics/like.png" alt="" class="inst_like_icon">
+                                            <img src="./instagram_section_pics/comment.png" alt=""
+                                                class="inst_like_icon">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         </section>
         <div class="subscribe_promo">
             <div class="subs_text">
                 <h5 class="subscrb_man_text">Подпишитесь на <br> обновления
                 </h5>
-                <div class="small_sub_text">Подпишитесь на нашу рассылку, чтобы быть в курсе последних <br> новостей и
+                <div class="small_sub_text">Подпишитесь на нашу рассылку, чтобы быть в курсе последних <br> новостей
+                    и
                     предложений</div>
             </div>
             <div class="text_subs">
                 <div class="subs_form">
                     <div class="first_side">
-                        <span class="form_name">Имя</span>
-                        <input class="input_subs" type="name" placeholder="Ваше Имя">
+                        <label for="name_input" class="form_name">Имя</label>
+                        <input id="name_input" class="input_subs" type="name" placeholder="Ваше Имя">
                     </div>
                     <div class="first_side ofsset">
-                        <span class="form_name">Email</span>
-                        <input class="input_subs " type="email" placeholder="Введите вашу почту">
+                        <label for="email_id" class="form_name">Email</label>
+                        <input id="email_id" class="input_subs " type="email" placeholder="Введите вашу почту">
                     </div>
 
                 </div>
@@ -237,33 +305,69 @@
             <div class="hello_btm">
                 <a href=""> <button class="btm"> Подписаться</button></a>
             </div>
-
-
         </div>
-
-
-
-
-
     </main>
 
-    <footer>
-        <div class="foooter_section">
-            <div class="foot_navigation">
-                <ul class="foot_nav_list">
-                    <li class="foot_nav_link">© 2023 Anti Mariya. All rights reserved.</a></li>
-                    <li class="foot_nav_link">Privacy Policy</a></li>
-                    <li class="foot_nav_link">Terms of Service</a></li>
-                </ul>
-            </div>
+    <footer class="foooter_section">
+        <div class="container">
 
+            <div class="foot_container">
+                <div class="foot_navigation">
+                    <div class="foot_header">
+                        <div class="for_buy">
+                            <div class="buy_title">Покупателям</div>
+                        </div>
+                        <ol class="buy_discription">
+                            <li class="buy_item">Как оформить заказ</li>
+                            <li class="buy_item">Способы доставки</li>
+                            <li class="buy_item">Способы оплаты</li>
+                        </ol>
+                    </div>
+                    <div class="foot_header">
+                        <div class="for_buy">
+                            <div class="buy_title">ANTIMERIYA:SHOP</div>
+                        </div>
+                        <ol class="buy_discription">
+                            <li class="buy_item">О нас</li>
+                            <li class="buy_item">Адреса магазинов</li>
+                        </ol>
+                    </div>
+                    <div class="foot_header">
+                        <div class="for_buy">
+                            <div class="buy_title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</div>
+                        </div>
+                        <ol class="buy_discription">
+                            <li class="buy_item">ВКонтакте</li>
+                            <li class="buy_item">Instagram </li>
+
+                        </ol>
+                    </div>
+
+                </div>
+                <div class="footer_promo pay_romo">
+                    <div class="foot_header number_foot">
+                        <div class="for_buy">
+                            <div class="buy_title">Официальный интернет-магазин «ANTIMERIYA»</div>
+                        </div>
+                        <span class="buy_item ">Телефон: +7 (917) 216 58 - 85</span>
+                    </div>
+                    <div class="card_icons">
+                        <div>
+                            <img src="./index_pics/foot_pay.png.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
     </footer>
 
 
+    <script src="https://kit.fontawesome.com/0bfd97b8fd.js" crossorigin="anonymous"></script>
 
-    <!-- <script src="./swiper-bundle.min.js"></script> -->
-    <!-- <script src="./script.js"></script> -->
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

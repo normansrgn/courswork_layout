@@ -1,0 +1,23 @@
+.map_web {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.map_style {
+    border-radius: 6px;
+}
+
+.paddin_reviwes {
+    padding-top: 160px;
+}
+
+
+.map_reviwes h1 {
+    font-size: 30px;
+}
+
+.btm_map {
+    width: 194px;
+}

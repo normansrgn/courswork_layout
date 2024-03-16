@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/bootstrap-grid.css">
+    <link rel="stylesheet" href="./styles/swiper.css">
+    <link rel="stylesheet" href="./styles/inex_style.css">
+    <link rel="stylesheet" href="./styles/moble_adaptive.CSS">
+    <link rel="stylesheet" href="./styles/burgermenu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./index_pics/logo.svg">
+
+
+    <title>Coursework</title>
+</head>
+
+<body>
+    <header class="header_section">
+        <div class="container header_container">
+            <div class="header_flex">
+
+                <div class="logo_secton">
+                    <div class="logo">
+                        <a class="url" href="./index.html">
+                            <div class=""><img class="logo_svg" src="./index_pics/logo.svg" alt=""></div>
+                        </a>
+                    </div>
+                    <!-- <span class="log_text"> Anti-Meriya</span>-->
+                </div>
+
+                <nav class="nav_bar hidden">
+                    <ul class="navigation_item">
+                        <li> <a href="./index.html" class="navigation_link">Home</a></li>
+                        <li> <a href="./shop.html" class="navigation_link">Shop</a></li>
+                        <li> <a href="./aboutus.html" class="navigation_link">About</a></li>
+                        <!-- <li> <a href="" class="navigation_link">Contact</a></li> -->
+
+                    </ul>
+                </nav>
+
+                <nav class="nav_bar hidden">
+                    <ul class="navigation_item">
+                        <li> <a href="./profile.html" class="navigation_link"><i class="fa-regular fa-user"></i></a>
+                        </li>
+                        <li> <a href="./basket.html" class="navigation_link"><i
+                                    class="fa-solid fa-basket-shopping"></i></a></li>
+                        <li> <a href="./log_in.html" class="navigation_link">Log In</a></li>
+
+
+
+                    </ul>
+                </nav>
+
+
+                <div class="burger_menu">
+
+                    <button id="burger__btn" type="button">
+                        <span id="burgerSpan"></span>
+                    </button>
+                    <aside class="burger__container">
+                        <div class="burger__content">
+                            <nav class="nav_bar burger_nav">
+                                <ul class="navigation_item">
+                                    <div class="icons_basket">
+                                        <li> <a href="./profile.html" class="navigation_link"><i
+                                                    class="fa-regular fa-user"></i></a></li>
+                                        <li> <a href="./basket.html" class="navigation_link"><i
+                                                    class="fa-solid fa-basket-shopping"></i></a></li>
+
+                                    </div>
+                                    <li> <a href="./index.html" class="navigation_link">Home</a></li>
+                                    <li> <a href="./shop.html" class="navigation_link">Shop</a></li>
+                                    <li> <a href="./aboutus.html" class="navigation_link">About</a></li>
+                                    <!-- <li> <a href="" class="navigation_link">Contact</a></li> -->
+                                    <li> <a href="./log_in.html" class="navigation_link">Log In</a></li>
+
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <main>
+        <section class="profile_detals">
+            <div class="container">
+                <div class="profile_detal_nav">
+                    <h1>Profile Details</h1>
+                    <span>Update your personal information</span>
+                    <div class="prof_nav_buttons">
+                        <button class="prof_btm prof_button">Delete</button>
+                        <button class="prof_btm prof_button">Edit</button>
+                    </div>
+                </div>
+                <div class="profil_information_cards">
+                    <div class="prof_inf_card">
+                        <div>
+                            <img class="prof_card_image" src="./index_pics/hoodie.jpg" alt="">
+                        </div>
+                        <div class="card_text_block">
+                            <div class="prof_name">Name</div>
+                            <span>John Doe</span>
+                            <div class="card_inf">Your name will be displayed on your profile
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="prof_inf_card">
+                        <div>
+                            <!-- <img class="prof_card_image" src="./index_pics/hoodie.jpg" alt=""> -->
+                        </div>
+                        <div class="card_text_block">
+                            <div class="prof_name">Email</div>
+                            <span>johndoe@example.com</span>
+                            <div class="card_inf">Your email address is used for communication
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- <div class="prof_inf_card">
+                        <div>
+                            <img class="prof_card_image" src="./index_pics/hoodie.jpg" alt="">
+                        </div>
+                        <div class="card_text_block">
+                            <div class="prof_name">Телефон</div>
+                            <span>+7 917 216 5885</span>
+
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+
+
+
+            </div>
+        </section>
+
+        <section class="user_orders_section">
+            <div class="container">
+                <div class="oreder_sectiontext">
+                    <h2 class="catalog_maintext ">
+                        Ваши покупки
+                    </h2>
+                    <div class="profil_small_text">
+                        Просматривайте свои прошлые заказы и управляйте ими
+                    </div>
+                </div>
+
+                <!-- Slider main container -->
+                <div class=" prof_slide_fl">
+                    <i class="fa-solid fa-arrow-left "></i>
+                    <div class="swiper swiper_profile">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="cataog_card">
+                                        <img class="card_image" src="./index_pics/sneakers.jpg" alt="">
+                                        <a class="url" href="">
+                                            <div class="tovar_inf">
+                                                <span>mariya sneaker</span>
+                                                <div class="buy">Order Date: 02/01/2022</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="cataog_card">
+                                        <img class="card_image" src="./index_pics/t-shirt.png" alt="">
+                                        <a class="url" href="">
+                                            <div class="tovar_inf">
+                                                <span>mariya sneaker</span>
+                                                <div class="buy">Order Date: 02/01/2022</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="cataog_card">
+                                        <img class="card_image" src="./index_pics/hoodie.jpg" alt="">
+                                        <a class="url" href="">
+                                            <div class="tovar_inf">
+                                                <span>mariya sneaker</span>
+                                                <div class="buy">Order Date: 02/01/2022</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="cataog_card">
+                                        <img class="card_image" src="./index_pics/sneakers.jpg" alt="">
+                                        <a class="url" href="">
+                                            <div class="tovar_inf">
+                                                <span>mariya sneaker</span>
+                                                <div class="buy">Order Date: 02/01/2022</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="cataog_card">
+                                        <img class="card_image" src="./index_pics/t-shirt.png" alt="">
+                                        <a class="url" href="">
+                                            <div class="tovar_inf">
+                                                <span>mariya sneaker</span>
+                                                <div class="buy">Order Date: 02/01/2022</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="cataog_card">
+                                        <img class="card_image" src="./index_pics/t-shirt.png" alt="">
+                                        <a class="url" href="">
+                                            <div class="tovar_inf">
+                                                <span>mariya sneaker</span>
+                                                <div class="buy">Order Date: 02/01/2022</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="cl swiper-button-prev"></div>
+                        <div class="cl swiper-button-next"></div>
+
+
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section class="save_item_section">
+            <div class="container">
+                <div class="profile_detal_nav saved_nav">
+                    <h1>Избранные товары</h1>
+                    <span>Управляйте своими сохраненными товарами</span>
+                    <div class="prof_nav_buttons">
+                        <button class="prof_btm prof_button">Посмотреть</button>
+                        <button class="prof_btm prof_button">Редактировать</button>
+                    </div>
+                </div>
+
+                <div class="saved_tovar_list">
+                    <div class="saved_tovar">
+                        <div class=""><img src="./index_pics/hoodie.jpg" alt="" class="item_image"></div>
+                        <div class="saved_item_information">
+                            <div class="saved_nameprice">
+                                <div class="saved_item_name">Sneaker</div>
+                                <div class="saved_item_price">100$</div>
+                            </div>
+                            <div class="item_date">
+
+                                <div class="buy_date">
+                                    Added on:
+                                </div>
+                                <div class="buy_date">
+                                    01/01/2022
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="saved_tovar">
+                        <div class=""><img src="./index_pics/hoodie.jpg" alt="" class="item_image"></div>
+                        <div class="saved_item_information">
+                            <div class="saved_nameprice">
+                                <div class="saved_item_name">Sneaker</div>
+                                <div class="saved_item_price">100$</div>
+                            </div>
+                            <div class="item_date">
+
+                                <div class="buy_date">
+                                    Added on:
+                                </div>
+                                <div class="buy_date">
+                                    01/01/2022
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="saved_tovar">
+                        <div class=""><img src="./index_pics/hoodie.jpg" alt="" class="item_image"></div>
+                        <div class="saved_item_information">
+                            <div class="saved_nameprice">
+                                <div class="saved_item_name">Sneaker</div>
+                                <div class="saved_item_price">100$</div>
+                            </div>
+                            <div class="item_date">
+
+                                <div class="buy_date">
+                                    Added on:
+                                </div>
+                                <div class="buy_date">
+                                    01/01/2022
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="foooter_section">
+            <div class="foot_navigation">
+                <ul class="foot_nav_list">
+                    <li class="foot_nav_link">© 2023 Anti Mariya. All rights reserved.</a></li>
+                    <li class="foot_nav_link">Privacy Policy</a></li>
+                    <li class="foot_nav_link">Terms of Service</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/0bfd97b8fd.js" crossorigin="anonymous"></script>
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>

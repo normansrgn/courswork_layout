@@ -1,0 +1,90 @@
+.form_main_text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.form_main_text h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.reg_text {
+    font-size: 19px;
+    text-align: center;
+
+}
+
+
+
+.form_main_text span {
+    font-size: 16px;
+
+}
+
+.registration {
+    padding-top: 120px;
+    padding-bottom: 170px;
+}
+
+.form_blog {
+    display: flex;
+    justify-content: center;
+}
+
+.sign_lay {
+    background-color: #e3cfeb;
+    padding: 11px;
+    width: 300px;
+    height: 10px;
+    border-radius: 9px;
+    border: 1px solid #0f000eac;
+}
+
+.sign_ins_flex {
+    display: flex;
+    gap: 24px;
+}
+
+.btm_signIn {
+    width: 200px;
+    height: 48px;
+    background-color: #1e142a;
+    color: #ece5fb;
+    border-radius: 8px;
+    border: 0cap;
+    transition: .3s ease;
+    text-align: center;
+
+}
+
+@media (hover: hover) {
+    .btm_signIn:hover {
+        background-color: #bb9dde;
+        color: #110911;
+        transition: .3s ease;
+        cursor: pointer;
+    }
+}
+
+@media (hover: none) {
+    .btm_signIn:active {
+        background-color: #bb9dde;
+        color: #110911;
+        transition: .1s ease;
+        cursor: pointer;
+    }
+}
+
+.log_in {
+    padding-top: 20px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.log_in a {
+    text-decoration: none;
+    color: #bd96cc;
+}

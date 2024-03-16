@@ -1,11 +1,41 @@
+@import url("./burgermenu.css");
+@import url("./form_redistration.css");
+@import url("./profile.css");
+@import url("./shop.css");
+@import url("./basket.css");
+@import url("./t-shirts.css");
+@import url("./t-shirt-page.css");
+@import url("./moble_adaptive.CSS");
+@import url("./swiper.css");
+@import url("./bootstrap-grid.css");
+@import url("./reset.css");
+@import url("./about_us.css");
+
+
+/* ШРИФТЫ */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    font-family: inherit;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     color: #ffeefe;
     /* background: -webkit-linear-gradient(60deg, #2e2439, #0f0b14); */
     /* background:  -webkit-linear-gradient(55deg, #1d102b,#0c0810); */
     background: -webkit-linear-gradient(180deg, #1d102b, #0c0810);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+main {
+    flex-grow: 1;
+}
 
 .url {
     text-decoration: none;
@@ -17,6 +47,10 @@ body {
     /* border-radius: 60%; */
     margin: 10px 0 10px 10px;
 
+}
+
+.burger_menu {
+    display: none;
 }
 
 .logo_secton {
@@ -88,7 +122,8 @@ body {
 .hello_btm {
     text-align: center;
     padding-top: 30px;
-
+    display: flex;
+    justify-content: center;
 }
 
 .btm {
@@ -103,13 +138,25 @@ body {
     text-align: center;
 }
 
-.btm:hover {
-    background-color: #bb9dde;
-    /* border: 1px solid rgb(255, 255, 255); */
-    color: #110911;
-    transition: .3s ease;
-    cursor: pointer;
+@media (hover: hover) {
+    .btm:hover {
+        background-color: #bb9dde;
+        color: #110911;
+        transition: .3s ease;
+        cursor: pointer;
+    }
 }
+
+@media (hover: none) {
+    .btm:active {
+        background-color: #bb9dde;
+        color: #110911;
+        transition: .1s ease;
+        cursor: pointer;
+    }
+}
+
+
 
 .cloth_catalog {
     padding-top: 60px;
@@ -126,6 +173,11 @@ body {
     text-align: center;
     font-weight: bold;
     padding-bottom: 44px;
+}
+
+.catalog_card-img {
+    width: 100%;
+
 }
 
 .cataog_card {
@@ -158,9 +210,14 @@ body {
 }
 
 .promo_section_text {
-    font-size: 38px;
+    font-size: 24px;
     font-weight: bold;
     text-align: start;
+}
+
+.instagram_flex {
+    display: flex;
+    justify-content: center;
 }
 
 .small_promo_text {
@@ -231,17 +288,24 @@ body {
 }
 
 .pad {
-    margin-left: 150px;
+    /* margin-left: 150px; */
 }
 
 .inst_post_card {
     margin-top: 80px;
     /* margin-left: 150px; */
     width: 240px;
-    height: 358px;
+    height: 375px;
     background-color: #120316cc;
     border-radius: 8px;
     border: 1px solid #0f000eac;
+}
+
+.inst_post-card {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
 }
 
 .inst_image {
@@ -291,15 +355,13 @@ body {
     margin-right: 90px;
 }
 
-.subscribe_promo {
-    border-top: 1px solid #0f000eac;
 
-}
 
 .instagram_section {}
 
 .subscribe_promo {
-    padding-bottom: 60px;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
     border-bottom: 1px solid #0f000eac;
 
 }
@@ -330,12 +392,16 @@ body {
 }
 
 
-
+.first_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .input_subs {
     background-color: #e3cfeb;
     padding: 11px;
-    width: 600px;
+    width: 270px;
     height: 10px;
     border-radius: 9px;
     border: 1px solid #0f000eac;
@@ -356,7 +422,8 @@ body {
 
 .subs_form {
     padding-top: 30px;
-    /* display: flex; */
+    display: flex;
+    align-items: center;
     gap: 24px;
     flex-direction: column;
 }
@@ -368,25 +435,79 @@ body {
 }
 
 .foooter_section {
-    padding-top: 20px;
-    padding-bottom: 19px;
 
+    /* backgrund: -webkit-linear-gradient(130deg, #2e233f, #0f0716); */
+
+   
+    padding-top: 20px;
+   
+
+}
+
+
+.pay_romo {
+    gap: 25px;
+    padding-top: 45px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number_foot {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.foot_container {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.buy_title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.buy_item {
+    font-size: 13px;
+    color: #D4D4D4;
 }
 
 .foot_nav_list {
     display: flex;
     justify-content: center;
     gap: 60px;
+    margin-top: 40px;
 }
 
 .foot_nav_link {
-    /* color: black; */
+    color: black;
     font-size: 15px;
 
 
-    /* font-weight: bold; */
+    font-weight: bold;
 }
 
+.foot_navigation {
+    gap: 25px;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #0f000eac;
+
+
+}
+
+.buy_discription {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
 .cards_inst {
     display: flex;
