@@ -21,7 +21,10 @@
     font-family: inherit;
 }
 
+
+
 body {
+    animation: fade 0.1s;
     font-family: "Montserrat", sans-serif;
     /* font-family: Arial, Helvetica, sans-serif; */
     color: white;
