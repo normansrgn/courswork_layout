@@ -437,10 +437,43 @@ main {
 }
 
 .foooter_section {
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 19px;
 
+    /* backgrund: -webkit-linear-gradient(130deg, #2e233f, #0f0716); */
+
+   
+    padding-top: 20px;
+   
+
+}
+
+
+.pay_romo {
+    padding-top: 45px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number_foot {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.foot_container {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.buy_title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.buy_item {
+    font-size: 13px;
+    color: #D4D4D4;
 }
 
 .foot_nav_list {
@@ -451,13 +484,30 @@ main {
 }
 
 .foot_nav_link {
-    /* color: black; */
+    color: black;
     font-size: 15px;
 
 
-    /* font-weight: bold; */
+    font-weight: bold;
 }
 
+.foot_navigation {
+
+    padding-bottom: 70px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #0f000eac;
+
+
+}
+
+.buy_discription {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
 .cards_inst {
     display: flex;
