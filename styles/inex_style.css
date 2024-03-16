@@ -9,7 +9,7 @@
 @import url("./swiper.css");
 @import url("./bootstrap-grid.css");
 @import url("./reset.css");
-
+@import url("./about_us.css");
 
 
 /* ШРИФТЫ */
@@ -355,15 +355,13 @@ main {
     margin-right: 90px;
 }
 
-.subscribe_promo {
-    border-top: 1px solid #0f000eac;
 
-}
 
 .instagram_section {}
 
 .subscribe_promo {
-    padding-bottom: 60px;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
     border-bottom: 1px solid #0f000eac;
 
 }
@@ -448,6 +446,7 @@ main {
 
 
 .pay_romo {
+    gap: 25px;
     padding-top: 45px;
     padding-bottom: 60px;
     display: flex;
@@ -492,7 +491,8 @@ main {
 }
 
 .foot_navigation {
-
+    gap: 25px;
+    flex-wrap: wrap;
     padding-bottom: 70px;
     margin-top: 40px;
     display: flex;
