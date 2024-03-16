@@ -145,6 +145,12 @@
 
 }
 
+@media (max-width: 986px) {
+    .foot_container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
 @media (max-width: 768px) {
     .hello_text {
         font-size: 23px;
@@ -160,6 +166,10 @@
         text-align: start;
     }
 
+    .card_icons {
+        display: none;
+    }
+
 }
 
 
@@ -170,6 +180,11 @@
     }
 }
 
+@media (max-width: 654px) {
+    .foot_navigation {
+        padding-bottom: 0px;
+    }
+}
 @media (max-width: 576px) {
 
     .container,
