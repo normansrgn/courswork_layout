@@ -1,6 +1,11 @@
 /* HOME LAYOUT */
 @media (max-width: 1400px) {
 
+
+    .map_web  {
+        padding-top: 0px;
+    }
+
     .instagram_flex {
         display: block;
     }
