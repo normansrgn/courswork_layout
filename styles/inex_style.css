@@ -161,6 +161,7 @@ main {
 
 
 
+
 .cloth_catalog {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -183,15 +184,45 @@ main {
 
 }
 
+.cataog_card::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #130a1c;
+    opacity: 0;
+    transition: 0.2s ease;
+
+    
+}
+.cataog_card:hover::before {
+    opacity: 0.4;
+    transition: 0.2s ease;
+}
+
+
+
+
 .cataog_card {
+    position: relative;
     align-items: center;
     width: 100%;
-    height: 100%px;
+    height: 100%;
     background-color: #130a1c;
     border-radius: 8px;
+
     /* border: 1px solid #0f000eac; */
 
 }
+
+
+
+/* .card_hover:hover {
+    background-color: white;
+    
+} */
 
 .section_gap {
     display: flex;
