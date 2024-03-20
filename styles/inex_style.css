@@ -22,6 +22,9 @@
 }
 
 
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
     animation: fade 0.1s;
