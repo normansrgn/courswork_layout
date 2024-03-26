@@ -339,6 +339,7 @@ main {
 }
 
 .inst_post-card {
+    align-items: center;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
