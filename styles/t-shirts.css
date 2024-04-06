@@ -31,17 +31,20 @@
 }
 
 .searchinp {
+    background-color: #f4eaf8;
+    margin-top: 6px;
     width: 200px;
     border-radius: 25px;
     border: none;
-    padding: 6px;
+    padding: 9px;
 }
 
 .searchinp::placeholder {
+    color: black;
     text-align: start;
     font-size: 15px;
    text-align: start;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 @media(max-width:852px) {

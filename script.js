@@ -69,8 +69,6 @@ const swiper_profile = new Swiper('.swiper_profile', {
     slidesPerView: 3,
     spaceBetween: 8,
 
-    // autoplay: {
-    //     delay: 2500,
     // Navigation arrows
     navigation: {
         nextEl: '.fa-arrow-left',
