@@ -121,6 +121,7 @@
 }
 
 .saved_nav {
+    flex-direction: column;
 }
 
 .saved_tovar {
