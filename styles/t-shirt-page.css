@@ -13,7 +13,7 @@
 .tovar_visit {
     display: flex;
     gap: 20px;
-  
+
 }
 
 
@@ -55,7 +55,7 @@
 .item_basket_btm {
     width: 200px;
     height: 50px;
-   transition: 0.2s ease;
+    transition: 0.2s ease;
 
     border: 0px;
     font-size: 16px;
@@ -65,10 +65,10 @@
 }
 
 .item_basket_btm:hover {
-   transition: 0.2s ease;
+    transition: 0.2s ease;
     color: #1e142a;
     cursor: pointer;
-    background-color:#ffeefe;
+    background-color: #ffeefe;
 }
 
 
@@ -83,6 +83,33 @@
     padding-top: 8px;
     display: flex;
     gap: 8px;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
+
+.size_item {
+    /* background-color: #1e142a; */
+    border: 1px solid;
+    padding: 3px 12px 4px;
+    border: 1px solid #261a35;
+    border-radius: 4px;
+    transition: 0.1s linear;
+}
+
+.item_size_block {
+    display: flex;
+    gap: 10px;
+    /* justify-content: space-between; */
+}
+
+.size_item:hover {
+    color: white;
+    cursor: pointer;
+    background-color: #bb9dde;
+    transition: 0.1s linear;
+}
+
+.size_item_active {
+    background-color: #bb9dde;
+
+}
