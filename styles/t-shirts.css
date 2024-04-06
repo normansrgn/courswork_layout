@@ -18,9 +18,10 @@
 }
 
 .catalog_cloth_cards {
+    flex-wrap: wrap;
     display: flex;
     gap: 30px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -46,6 +47,8 @@
    text-align: start;
     font-weight: 500;
 }
+
+
 
 @media(max-width:852px) {
 .search_barrrr  {
