@@ -56,7 +56,6 @@
     }
 
     .cataog_card {
-        width: 89%;
         margin-bottom: 20px;
     }
 
@@ -185,6 +184,13 @@
         display: none;
     }
 
+}
+
+@media (max-width: 804px) {
+    .catalog_cloth_cards {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 

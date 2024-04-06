@@ -211,7 +211,7 @@ main {
 .cataog_card {
     position: relative;
     align-items: center;
-    width: 100%;
+    width: 400px;
     height: 100%;
     background-color: #130a1c;
     border-radius: 8px;
@@ -574,3 +574,10 @@ main {
 
 
 .why_us_adapt {}
+
+
+@media (max-width:600px) {
+    .cataog_card {
+        width: 341px;
+    }
+}

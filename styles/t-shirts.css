@@ -16,3 +16,49 @@
 .logo_svg {
     width: 170px;
 }
+
+.catalog_cloth_cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_barrrr {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.searchinp {
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    padding: 6px;
+}
+
+.searchinp::placeholder {
+    text-align: start;
+    font-size: 15px;
+   text-align: start;
+    font-weight: bold;
+}
+
+@media(max-width:852px) {
+.search_barrrr  {
+    flex-direction: column;
+}
+.searchinp  {
+    width: 300px;
+    padding: 21px;
+    max-width: 100%;
+}
+
+.searchinp::placeholder {
+    font-size: 25px;
+    
+}
+
+
+
+}

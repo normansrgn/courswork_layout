@@ -17,7 +17,7 @@
 
 .profile_detal_nav {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 24px;
     padding-bottom: 15px;
 }
