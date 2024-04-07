@@ -10,6 +10,7 @@
 @import url("./bootstrap-grid.css");
 @import url("./reset.css");
 @import url("./about_us.css");
+@import url('https://unpkg.com/aos@2.3.1/dist/aos.css');
 
 
 /* ШРИФТЫ */
@@ -24,7 +25,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     animation: fade 0.1s;
@@ -198,8 +199,9 @@ main {
     opacity: 0;
     transition: 0.2s ease;
 
-    
+
 }
+
 .cataog_card:hover::before {
     opacity: 0.4;
     transition: 0.2s ease;
@@ -476,9 +478,9 @@ main {
 
     /* backgrund: -webkit-linear-gradient(130deg, #2e233f, #0f0716); */
 
-   
+
     padding-top: 20px;
-   
+
 
 }
 
@@ -492,9 +494,9 @@ main {
 }
 
 .number_foot {
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .foot_container {

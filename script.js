@@ -104,6 +104,8 @@ shopBtms.forEach((btn, index) => btn.addEventListener("click", () => {
     showShop(index);
 }));
 
+AOS.init();
+
 
 
 
