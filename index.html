@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/inex_style.css">
     <link rel="stylesheet" href="./styles/moble_adaptive.CSS">
     <link rel="stylesheet" href="./styles/burgermenu.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="./index_pics/logo.svg">
     <link rel="shortcut icon" type="image/x-icon" href="./index_pics/logo.svg">
 
@@ -106,7 +107,7 @@
             <div class="container">
                 <div class="row ">
                     <div class="catalog_cloth_cards nowrap">
-                        <div class="cataog_card">
+                        <div class="cataog_card " data-aos="fade-right">
                             <div class="catalog_card-img">
                                 <a href="./t-shirts.html">
                                     <img class="card_image" src="./index_pics/t-shirt.jpg" alt="">
@@ -118,7 +119,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="cataog_card">
+                        <div class="cataog_card" data-aos="fade-down">
                             <div class="catalog_card-img">
                                 <a href="./hoodie.html">
                                     <img class="card_image" src="./index_pics/hoodie.jpg" alt="">
@@ -130,7 +131,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="cataog_card">
+                        <div class="cataog_card" data-aos="fade-left">
                             <div class="catalog_card-img">
                                 <a href="./sneakers.html">
                                     <img class="card_image" src="./index_pics/sneakers.jpg" alt="">
@@ -146,13 +147,13 @@
                 </div>
             </div>
         </section>
-        <section class="whyus_section">
+        <section class="whyus_section" >
             <div class="container">
                 <div class="row">
-                    <div class="promo_card_block">
+                    <div class="promo_card_block " >
 
-                        <div class="col-xxl-5 col-lg-12">
-                            <div class="promo_text">
+                        <div class="col-xxl-5 col-lg-12 ">
+                            <div class="promo_text" data-aos="fade-right" >
                                 <h3 class="promo_section_text">Почему выбирают нас?</h3>
                                 <div class="small_promo_text">
                                     Чувствуй комфорт и стиль в каждом предмете
@@ -160,8 +161,9 @@
                             </div>
                         </div>
                         <div class="col-xxl-5 col-lg-12">
-                            <div class="mini_cards">
-                                <div class="mini_card">
+                            <div class="mini_cards " >
+                                <div class="mini_card" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                data-aos-offset="500" data-aos-duration="500">
 
                                     <img class="img_mini_card" src="./index_pics/mini_cards_pics/messages.svg" alt="">
                                     <div class="card_text">
@@ -174,7 +176,8 @@
                                     </div>
 
                                 </div>
-                                <div class="mini_card">
+                                <div class="mini_card" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                data-aos-offset="500" data-aos-duration="500">
                                     <img class="img_mini_card" src="./index_pics/mini_cards_pics/shirt-solid.svg"
                                         alt="">
                                     <div class="card_text">
@@ -187,7 +190,8 @@
                                     </div>
 
                                 </div>
-                                <div class="mini_card">
+                                <div class="mini_card" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                data-aos-offset="500" data-aos-duration="500">
                                     <img class="img_mini_card"
                                         src="./index_pics/mini_cards_pics/money-check-dollar-solid.svg" alt="">
                                     <div class="card_text">
@@ -205,7 +209,7 @@
                 </div>
             </div>
         </section>
-        <section class="instagram_section">
+        <section class="instagram_section " data-aos="fade-up" data-aos-duration="2500">
             <div class="container">
                 <div class="row">
                     <div class="instagram_flex ">
@@ -272,7 +276,7 @@
             </div>
             </div>
         </section>
-        <div class="subscribe_promo">
+        <div class="subscribe_promo" data-aos="fade-up" data-aos-anchor-placement="center-center">
             <div class="subs_text">
                 <h5 class="subscrb_man_text">Подпишитесь на <br> обновления
                 </h5>
@@ -365,6 +369,8 @@
 
 
     <script src="https://kit.fontawesome.com/0bfd97b8fd.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
     <script src="./swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
