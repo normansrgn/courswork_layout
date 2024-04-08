@@ -39,6 +39,11 @@ const swiper_profile = new Swiper('.swiper_profile', {
           spaceBetween: 20
         },
 
+        698: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+
         793: {
             slidesPerView: 1,
             spaceBetween:0
@@ -51,12 +56,12 @@ const swiper_profile = new Swiper('.swiper_profile', {
 
         // when window width is >= 480px
         1187: {
-          slidesPerView: 2,
+          slidesPerView: 3,
           spaceBetween: 30
         },
         // when window width is >= 640px
         1700: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 40
         }
       }
