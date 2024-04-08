@@ -1,22 +1,3 @@
-// ПОИСК ТОВАРОВ //
-
-document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.getElementById("searchinput");
-    const cards = document.querySelectorAll(".cataog_card");
-
-    searchInput.addEventListener("input", function () {
-        const searchTerm = searchInput.value.trim().toLowerCase();
-
-        cards.forEach(function (card) {
-            const cardname = card.querySelector('.cardname').textContent.trim().toLowerCase();
-            if (cardname.includes(searchTerm)) {
-                card.style.display = "block";
-            } else {
-                card.style.display = "none";
-            }
-        });
-    });
-});
 
 // BURGER MENU //
 
@@ -41,73 +22,72 @@ const burgerMenu = () => {
 burgerMenu();
 
 
-// SWIPER shop //
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
+// // SWIPER shop //
+// const swiper = new Swiper('.swiper', {
+//     // Optional parameters
 
-    loop: true,
-    slidesPerView: 1,
+//     loop: true,
+//     slidesPerView: 1,
 
-    // Autoplay
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+//     // Autoplay
+//     // autoplay: {
+//     //     delay: 2500,
+//     //     disableOnInteraction: false,
+//     // },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
+//     // Navigation arrows
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+// });
 
-// SWIPER PROFILE
+// // SWIPER PROFILE
 
-const swiper_profile = new Swiper('.swiper_profile', {
-    // Optional parameters
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 8,
+// const swiper_profile = new Swiper('.swiper_profile', {
+//     // Optional parameters
+//     loop: true,
+//     slidesPerView: 3,
+//     spaceBetween: 8,
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.fa-arrow-left',
-        prevEl: '.fa-arrow-right',
-    },
-});
+//     // Navigation arrows
+//     navigation: {
+//         nextEl: '.fa-arrow-left',
+//         prevEl: '.fa-arrow-right',
+//     },
+// });
 
 
 // SHOP TAB SCRIPT // 
 
-const shopBtms = document.querySelectorAll(".buttons_block button");
-// console.log(shopBtms);
-const shopItems = document.querySelectorAll(".shop_toogle_section");
-// console.log(shopItems);
+// const shopBtms = document.querySelectorAll(".buttons_block button");
+// // console.log(shopBtms);
+// const shopItems = document.querySelectorAll(".shop_toogle_section");
+// // console.log(shopItems);
 
 
-function hideShop () {
-    shopItems.forEach(item => item.classList.add("hide_shop"));
-    shopBtms.forEach(item => item.classList.remove("active"));
-}
+// function hideShop () {
+//     shopItems.forEach(item => item.classList.add("hide_shop"));
+//     shopBtms.forEach(item => item.classList.remove("active"));
+// }
 
-function showShop(index) {
-    shopItems[index].classList.remove("hide_shop");
-    shopBtms[index].classList.add("active");
+// function showShop(index) {
+//     shopItems[index].classList.remove("hide_shop");
+//     shopBtms[index].classList.add("active");
 
-}
+// }
 
-hideShop(); 
-showShop(0);
+// hideShop(); 
+// showShop(0);
 
-shopBtms.forEach((btn, index) => btn.addEventListener("click", () => {
-    hideShop(); 
-    showShop(index);
-}));
-
-AOS.init();
+// shopBtms.forEach((btn, index) => btn.addEventListener("click", () => {
+//     hideShop(); 
+//     showShop(index);
+// }));
 
 
-
-
-
-
+// document.querySelectorAll('form').forEach((form) => {
+//     form.addEventListener('submit', (e) => {
+//         e.preventDefault();
+//     })
+// })
