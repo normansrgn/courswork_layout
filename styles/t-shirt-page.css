@@ -109,7 +109,7 @@
     transition: 0.1s linear;
 }
 
-.size_item_active {
+.activesize {
     background-color: #bb9dde;
 
 }
