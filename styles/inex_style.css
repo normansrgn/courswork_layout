@@ -284,6 +284,7 @@ main {
 }
 
 .mini_card {
+    align-items: center;
     border-radius: 8px;
     background-color: #130a1c;
     display: flex;
