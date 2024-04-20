@@ -37,3 +37,43 @@ const burgerMenu = () => {
 
 burgerMenu();
 
+
+
+// Находим все кнопки "Купить"
+var buyButtons = document.querySelectorAll('.item_basket_btm');
+
+// Обходим каждую кнопку
+buyButtons.forEach(function(button) {
+    // Назначаем обработчик события на нажатие кнопки
+    button.addEventListener('click', function(event) {
+        // Предотвращаем стандартное поведение кнопки
+        event.preventDefault();
+        
+        // Находим родительский элемент карточки товара
+        var card = button.closest('.tovar_visit');
+        
+        // Получаем информацию о товаре
+        var itemName = card.querySelector('.add-basket_tovar_block h1').textContent;
+        var itemPrice = card.querySelector('.add-basket_tovar_block span').textContent;
+        var itemImgSrc = card.querySelector('.image_gapar img').getAttribute('src');// Получаем ссылку на изображение
+        
+        // Создаем объект для представления товара
+        var item = {
+            name: itemName,
+            price: itemPrice,
+            imgSrc: itemImgSrc // Добавляем ссылку на изображение в объект товара
+        };
+        
+        // Получаем текущий список товаров из localStorage
+        var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        
+        // Добавляем новый товар в список
+        cartItems.push(item);
+        
+        // Сохраняем обновленный список товаров в localStorage
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        
+       
+    });
+});
+

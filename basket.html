@@ -92,53 +92,16 @@
                 <div class="profile_detal_nav">
                     <h1>Ваша корзина</h1>
                 </div>
-                <div class="basket_list">
-                    <div class="basket_tovar">
-                        <div><img src="./index_pics/t-shirt.jpg" alt="" class="basket_item_image"></div>
-                        <div class="basket_item_inf">
-                            <div>
-                                <div class="basket_item_name">Shirt</div>
-                                <div class="basket_item_quantity">1x</div>
-                            </div>
-                            <div class="basket_item_price">100$</div>
 
-                        </div>
+                <div id="cartContent">
+                    <button class="apply_promocode" id="clear-cart-btn">Очистить корзину</button>
+                    <div class="cart_items" id="cart-items-container">
 
-
-                    </div>
-                    <div class="basket_tovar">
-                        <div><img src="./index_pics/t-shirt.jpg" alt="" class="basket_item_image"></div>
-                        <div class="basket_item_inf">
-                            <div>
-                                <div class="basket_item_name">Shirt</div>
-                                <div class="basket_item_quantity">1x</div>
-                            </div>
-                            <div class="basket_item_price">100$</div>
-
-                        </div>
-
-
-                    </div>
-                    <div class="basket_tovar">
-                        <div><img src="./index_pics/t-shirt.jpg" alt="" class="basket_item_image"></div>
-                        <div class="basket_item_inf">
-                            <div>
-                                <div class="basket_item_name">Shirt</div>
-                                <div class="basket_item_quantity">1x</div>
-                            </div>
-                            <div class="basket_item_price">100$</div>
-                        </div>
-                    </div>
-                    <div class="basket_tovar basket_sbtotal">
-                        <div class="basket_item_inf subtotal_inf">
-                            <div>
-                                <div class="basket_item_name">Итого:</div>
-                            </div>
-                            <div class="basket_item_price">0$</div>
-                        </div>
                     </div>
 
                 </div>
+
+            
             </div>
         </section>
         <section class="subtotal">
@@ -150,12 +113,12 @@
                     <input type="text" class="basket_promocode" placeholder="Введите промокод">
                     <button class="apply_promocode">Применить</button>
                 </form>
-            <div class="order">
-                <button class="order_button">
-                    Перейти к оформлению
+                <div class="order">
+                    <button class="order_button">
+                        Перейти к оформлению
 
-                </button>
-            </div>
+                    </button>
+                </div>
             </div>
         </section>
     </main>
@@ -228,6 +191,7 @@
     <script src="https://kit.fontawesome.com/0bfd97b8fd.js" crossorigin="anonymous"></script>
 
     <script src="./swiper-bundle.min.js"></script>
+    <script src="./js/basket.js"></script>
     <script src="./script.js"></script>
 </body>
 
