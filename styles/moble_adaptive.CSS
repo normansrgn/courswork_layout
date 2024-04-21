@@ -496,7 +496,11 @@
     }
 
     .apply_promocode {
-        width: 491px;
+        width: 100%;
         max-width: 100%;
+    }
+
+    .order_button {
+        width: 100%;
     }
 }
