@@ -64,6 +64,11 @@
     background-color: #1e142a;
 }
 
+.item_basket_btm.clicked {
+    background-color: #bb9dde;
+    color:  white;
+}
+
 .item_basket_btm:hover {
     transition: 0.2s ease;
     color: #1e142a;

@@ -1,3 +1,5 @@
+
+
 const sizeItems = document.querySelectorAll('.size_item');
 
 function addActiveClass() {
@@ -36,6 +38,20 @@ const burgerMenu = () => {
 }
 
 burgerMenu();
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Получаем кнопку "Добавить в корзину" по селектору
+    const addToCartBtn = document.querySelector('.item_basket_btm');
+
+    // Обработчик события для кнопки "Добавить в корзину"
+    addToCartBtn.addEventListener('click', function(event) {
+        // Изменяем текст кнопки на "Товар добавлен в корзину"
+        addToCartBtn.textContent = 'Товар добавлен в корзину';
+
+        addToCartBtn.classList.add('clicked');
+    });
+});
+
 
 
 
@@ -76,4 +92,6 @@ buyButtons.forEach(function(button) {
        
     });
 });
+
+
 

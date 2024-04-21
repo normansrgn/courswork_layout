@@ -102,11 +102,26 @@ main {
 }
 
 .navigation_link {
+    position: relative; 
     text-decoration: none;
     color: rgb(255, 255, 255);
-    /* transition: 0.3s; */
-
 }
+
+.navigation_link::before {
+    content: ''; 
+    position: absolute;
+    bottom: -1px; 
+    left: 0;
+    width: 0;
+    height: 1px; 
+    background-color: rgb(255, 255, 255); 
+    transition: width 0.3s; 
+}
+
+.navigation_link:hover::before {
+    width: 100%; 
+}
+
 
 .navigation_link:hover {
     border-bottom: 1px solid #0f000eac;

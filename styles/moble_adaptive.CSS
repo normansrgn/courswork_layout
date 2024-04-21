@@ -6,7 +6,7 @@
 @media (max-width: 1400px) {
 
 
-    .map_web  {
+    .map_web {
         padding-top: 0px;
     }
 
@@ -68,7 +68,7 @@
         font-size: 28px;
 
     }
-    
+
 
 
 
@@ -141,6 +141,7 @@
     .basket_list {
         align-items: center;
     }
+
     .burger_menu {
         display: block;
     }
@@ -165,6 +166,7 @@
         margin-right: 0px;
     }
 }
+
 @media (max-width: 768px) {
     .hello_text {
         font-size: 23px;
@@ -196,7 +198,7 @@
 
 @media (max-width: 704px) {
     .inst_post-card {
-        
+
         gap: 20px;
     }
 }
@@ -206,6 +208,7 @@
         padding-bottom: 0px;
     }
 }
+
 @media (max-width: 576px) {
 
     .container,
@@ -230,7 +233,7 @@
 
     .navigation_item {
         flex-direction: column;
-       
+
     }
 
     .logo_secton {
@@ -278,7 +281,7 @@
 
     .foot_nav_list {
         gap: 10px;
-        
+
     }
 
     .catalog_maintext {
@@ -474,8 +477,9 @@
         }
 
         .image_gapar {
-            max-width: 100%;;
-         
+            max-width: 100%;
+            ;
+
         }
     }
 }
@@ -487,12 +491,21 @@
 
 /* BASKET  */
 
-@media (max-width: 739px ) {
+@media (max-width: 767px) {
+    .basket_tovar {
+        width: auto;
+    }
+
     .promocode_input {
         display: flex;
         flex-direction: column;
         gap: 9px;
         align-items: center;
+    }
+
+    .basket_promocode {
+        width: 98%;
+        margin-bottom: 10px;
     }
 
     .apply_promocode {
