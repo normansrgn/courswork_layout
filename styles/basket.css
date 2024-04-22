@@ -12,8 +12,8 @@
     margin-top: 25px;
     display: flex;
     gap: 16px;
-    padding: 6px;
-    width: 1000px;
+    padding: 10px;
+    width: 640px;
     border-radius: 8px;
     border: 1px solid #2e233f;
     max-width: 100%;
@@ -103,16 +103,17 @@
     font-size: 15px;
     border: none;
     font-weight: 550;
-    background-color: #ffeefe;
+    background-color: #2e233f;
     transition: 0.2s ease;
     /* height: 48px; */
     cursor: pointer;
     padding: 13PX;
+    color: white;
 }
 
 .apply_promocode:hover {
-    background-color: #2e233f;
-    color: #ffeefe;
+    background-color: #ffeefe;
+    color: #2e233f;
     transition: 0.2s ease;
 }
 
