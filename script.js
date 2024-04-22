@@ -58,6 +58,17 @@ document.addEventListener("DOMContentLoaded", function() {
 // Находим все кнопки "Купить"
 var buyButtons = document.querySelectorAll('.item_basket_btm');
 
+class Product {
+    constructor (name, price, imgSrc, size) {
+        this.name = name;
+        this.price = price;
+        this.imgSrc = imgSrc;
+        this.size = size;
+    }
+}
+
+
+
 // Обходим каждую кнопку
 buyButtons.forEach(function(button) {
     // Назначаем обработчик события на нажатие кнопки
@@ -72,19 +83,14 @@ buyButtons.forEach(function(button) {
         var itemName = card.querySelector('.add-basket_tovar_block h1').textContent;
         var itemPrice = card.querySelector('.add-basket_tovar_block span').textContent;
         var itemImgSrc = card.querySelector('.image_gapar img').getAttribute('src');// Получаем ссылку на изображение
-        
-        // Создаем объект для представления товара
-        var item = {
-            name: itemName,
-            price: itemPrice,
-            imgSrc: itemImgSrc // Добавляем ссылку на изображение в объект товара
-        };
+        var size = card.querySelector('.size_item.activesize').textContent;
         
         // Получаем текущий список товаров из localStorage
         var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
         
         // Добавляем новый товар в список
-        cartItems.push(item);
+        cartItems.push(new Product(itemName, itemPrice, itemImgSrc, size));
+        console.log(size);
         
         // Сохраняем обновленный список товаров в localStorage
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
