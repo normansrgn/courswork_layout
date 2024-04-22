@@ -7,7 +7,7 @@ var cartItemsContainer = document.getElementById('cart-items-container');
 // Очищаем содержимое контейнера перед добавлением новых товаров
 cartItemsContainer.innerHTML = '';
 
-
+document.querySelector('.cart__total').innerHTML = cartItems.reduce((sum, {price}) => sum + +price.replace(/\D/g,''), 0);
 
 
 // Обходим каждый товар в корзине и добавляем его в контейнер
@@ -25,17 +25,22 @@ cartItems.forEach(function (item) {
                     <div class="cart_price">${item.size}</div>
                 
                     <div class="cart_price">${item.price}</div>
-               
+                
             </div>
         </div>
 
     `;
+
+    cartItems.reduce((sum, {price}) => sum + +price.replace(/\D/g,''), 0)
 
     cartItemsContainer.appendChild(itemElement); // Исправлено на cartItemsContainer
 });
 
 // Находим кнопку "Очистить корзину"
 var clearCartBtn = document.getElementById('clear-cart-btn');
+
+// Находим блок "Итого"
+var basketTotalInf = document.querySelector('.basket_total_inf');
 
 // Назначаем обработчик события на нажатие кнопки "Очистить корзину"
 clearCartBtn.addEventListener('click', function (event) {
@@ -44,6 +49,23 @@ clearCartBtn.addEventListener('click', function (event) {
 
     // Очищаем содержимое контейнера с товарами в корзине
     cartItemsContainer.innerHTML = '';
+
+    // Удаляем блок "Итого" из DOM-дерева
+    basketTotalInf.remove();
 });
+
+// Проверяем, есть ли значение в localStorage
+if (localStorage.getItem('showBasket') === 'true') {
+    // Находим блок корзины, которому нужно добавить стиль display: block
+    var basketBlock = document.querySelector('.basket_total_inf');
+
+    // Добавляем стиль display: block
+    basketBlock.style.display = 'flex';
+
+    // После добавления стиля удаляем значение из localStorage
+    localStorage.removeItem('showBasket');
+}
+
+
 
 

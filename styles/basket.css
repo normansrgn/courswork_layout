@@ -1,6 +1,15 @@
 .your_basket {
     padding-top: 60px;
 }
+.basket_hide {
+    display: none;
+}
+
+.tot_price {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
 
 .basket_item_image {
     width: 60px;
@@ -24,10 +33,11 @@
     width: 900px;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .basket_item_name {
+
     font-size: 24px;
     font-weight: 450;
 }
@@ -48,7 +58,7 @@
 
 .basket_list {
     display: flex;
-   
+
     flex-direction: column;
     gap: 20px;
 }
@@ -73,17 +83,17 @@
 
 .promocode_input {
     padding-top: 20px;
-    
+
 }
 
 .basket_promocode {
     width: 480px;
     background: none;
-    border: 1px solid #2e233f ;
+    border: 1px solid #2e233f;
     /* background-color: #2e233f; */
     font-size: 16px;
     color: #ffeefe;
-    
+
     padding-left: 8px;
     height: 50px;
     border-radius: 12px;
@@ -91,7 +101,7 @@
 }
 
 .basket_promocode::placeholder {
-    
+
     color: #ffeefe;
 }
 
@@ -144,6 +154,23 @@
     transition: 0.2s ease;
 }
 
+.basket_total_inf {
+    margin-top: 25px;
+    display: flex;
+    gap: 16px;
+    padding: 22px;
+    width: 617px;
+    border-radius: 8px;
+    border: 1px solid #2e233f;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+
+.cart__total {
+
+  
+}
 
 @media (max-width: 460px) {
     .basket_item_inf {
@@ -151,12 +178,12 @@
         width: auto;
         gap: 15px;
         padding-bottom: 10px;
-    } 
+    }
 
     .basket_tovar {
         flex-direction: column;
         align-items: center;
-    } 
+    }
 
     .basket_item_image {
         padding-top: 10px;
