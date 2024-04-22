@@ -121,6 +121,11 @@
     color: white;
 }
 
+.cart_price {
+    display: flex;
+    gap: 30px;
+}
+
 .apply_promocode:hover {
     background-color: #ffeefe;
     color: #2e233f;

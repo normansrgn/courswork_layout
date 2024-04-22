@@ -496,6 +496,10 @@
         width: auto;
     }
 
+    .basket_total_inf {
+        width: auto;
+    }
+
     .promocode_input {
         display: flex;
         flex-direction: column;

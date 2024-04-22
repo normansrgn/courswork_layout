@@ -22,9 +22,8 @@ cartItems.forEach(function (item) {
 
                <div class="basket_item_name"> ${item.name} </div>
 
-                    <div class="cart_price">${item.size}</div>
                 
-                    <div class="cart_price">${item.price}</div>
+                    <div class="cart_price"><span>${item.size}</span> <span> ${item.price}</span></div>
                 
             </div>
         </div>
