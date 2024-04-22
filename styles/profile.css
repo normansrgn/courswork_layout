@@ -62,15 +62,15 @@
 .prof_inf_card {
     display: flex;
     width: 520px;
-    height: 150px;
+    /* height: 150px; */
     background-color: #160b20;
     border-radius: 6px;
     max-width: 100%;
-
+    padding: 10px;
 }
 
 .prof_card_image {
-    padding: 16px 0 0 16px;
+    /* padding: 16px 0 0 16px; */
     width: 100px;
     height: 100px;
     border-radius: 8px;
@@ -88,7 +88,7 @@
 }
 
 .card_text_block span {
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .card_inf {
