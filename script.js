@@ -19,10 +19,11 @@ sizeItems.forEach(item => {
 
 // BURGER MENU //
 
-const burgerMenu = () => {
+function burgerMenu () {
     const burgerBtn = document.querySelector('#burger__btn');
     const burgerContainer = document.querySelector('.burger__container')
     const burgerSpan = document.querySelector('#burgerSpan');
+
 
     burgerBtn.addEventListener('click', (e) => {
         burgerContainer.classList.toggle('open');
@@ -39,6 +40,14 @@ const burgerMenu = () => {
 
 burgerMenu();
 
+
+let typed = new Typed('#animattitle', {
+    typeSpeed: 200,
+    baacSpeed: 500,
+    startDelay: 1000,
+    loop: true,
+    stringsElement: '#type_string',  
+}) 
 document.addEventListener("DOMContentLoaded", function() {
     // Получаем кнопку "Добавить в корзину" по селектору
     const addToCartBtn = document.querySelector('.item_basket_btm');
@@ -60,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Находим все кнопки "Купить"
-var buyButtons = document.querySelectorAll('.item_basket_btm');
+const buyButtons = document.querySelectorAll('.item_basket_btm');
 
 class Product {
     constructor (name, price, imgSrc, size) {
@@ -81,16 +90,16 @@ buyButtons.forEach(function(button) {
         event.preventDefault();
         
         // Находим родительский элемент карточки товара
-        var card = button.closest('.tovar_visit');
+        const card = button.closest('.tovar_visit');
         
         // Получаем информацию о товаре
-        var itemName = card.querySelector('.add-basket_tovar_block h1').textContent;
-        var itemPrice = card.querySelector('.add-basket_tovar_block span').textContent;
-        var itemImgSrc = card.querySelector('.image_gapar img').getAttribute('src');// Получаем ссылку на изображение
-        var size = card.querySelector('.size_item.activesize').textContent;
+        const itemName = card.querySelector('.add-basket_tovar_block h1').textContent;
+        const itemPrice = card.querySelector('.add-basket_tovar_block span').textContent;
+        const itemImgSrc = card.querySelector('.image_gapar img').getAttribute('src');// Получаем ссылку на изображение
+        const size = card.querySelector('.size_item.activesize').textContent;
         
         // Получаем текущий список товаров из localStorage
-        var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
         
         // Добавляем новый товар в список
         cartItems.push(new Product(itemName, itemPrice, itemImgSrc, size));
