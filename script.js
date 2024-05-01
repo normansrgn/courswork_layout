@@ -19,11 +19,10 @@ sizeItems.forEach(item => {
 
 // BURGER MENU //
 
-function burgerMenu () {
+const burgerMenu = () => {
     const burgerBtn = document.querySelector('#burger__btn');
     const burgerContainer = document.querySelector('.burger__container')
     const burgerSpan = document.querySelector('#burgerSpan');
-
 
     burgerBtn.addEventListener('click', (e) => {
         burgerContainer.classList.toggle('open');
@@ -40,14 +39,6 @@ function burgerMenu () {
 
 burgerMenu();
 
-
-let typed = new Typed('#animattitle', {
-    typeSpeed: 200,
-    baacSpeed: 500,
-    startDelay: 1000,
-    loop: true,
-    stringsElement: '#type_string',  
-}) 
 document.addEventListener("DOMContentLoaded", function() {
     // Получаем кнопку "Добавить в корзину" по селектору
     const addToCartBtn = document.querySelector('.item_basket_btm');

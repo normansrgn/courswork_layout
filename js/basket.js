@@ -1,8 +1,8 @@
 // Получаем список товаров из localStorage
-var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
 // Находим контейнер для товаров в корзине
-var cartItemsContainer = document.getElementById('cart-items-container');
+const cartItemsContainer = document.getElementById('cart-items-container');
 
 // Очищаем содержимое контейнера перед добавлением новых товаров
 cartItemsContainer.innerHTML = '';
@@ -12,7 +12,7 @@ document.querySelector('.cart__total').innerHTML = cartItems.reduce((sum, {price
 
 // Обходим каждый товар в корзине и добавляем его в контейнер
 cartItems.forEach(function (item) {
-    var itemElement = document.createElement('div');
+    const itemElement = document.createElement('div');
     itemElement.innerHTML = `
         <div class="basket_tovar">
             
@@ -36,10 +36,10 @@ cartItems.forEach(function (item) {
 });
 
 // Находим кнопку "Очистить корзину"
-var clearCartBtn = document.getElementById('clear-cart-btn');
+const clearCartBtn = document.getElementById('clear-cart-btn');
 
 // Находим блок "Итого"
-var basketTotalInf = document.querySelector('.basket_total_inf');
+const basketTotalInf = document.querySelector('.basket_total_inf');
 
 // Назначаем обработчик события на нажатие кнопки "Очистить корзину"
 clearCartBtn.addEventListener('click', function (event) {
@@ -56,7 +56,7 @@ clearCartBtn.addEventListener('click', function (event) {
 // Проверяем, есть ли значение в localStorage
 if (localStorage.getItem('showBasket') === 'true') {
     // Находим блок корзины, которому нужно добавить стиль display: block
-    var basketBlock = document.querySelector('.basket_total_inf');
+    const basketBlock = document.querySelector('.basket_total_inf');
 
     // Добавляем стиль display: block
     basketBlock.style.display = 'flex';
