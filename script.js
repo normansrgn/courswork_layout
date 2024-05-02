@@ -40,12 +40,14 @@ const burgerMenu = () => {
 burgerMenu();
 
 document.addEventListener("DOMContentLoaded", function() {
+
     // Получаем кнопку "Добавить в корзину" по селектору
     const addToCartBtn = document.querySelector('.item_basket_btm');
     const basketTotalInf = document.querySelector('.basket_total_inf');
 
     // Обработчик события для кнопки "Добавить в корзину"
     addToCartBtn.addEventListener('click', function(event) {
+        
         // Изменяем текст кнопки на "Товар добавлен в корзину"
         addToCartBtn.textContent = 'Товар добавлен в корзину';
 
