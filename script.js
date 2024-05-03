@@ -4,6 +4,7 @@ const sizeItems = document.querySelectorAll('.size_item');
 
 function addActiveClass() {
     sizeItems.forEach(item => {
+        
         if (!this.classList.contains('activesize')) {
             item.classList.remove('activesize');
         }
