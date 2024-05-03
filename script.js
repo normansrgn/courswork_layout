@@ -4,7 +4,7 @@ const sizeItems = document.querySelectorAll('.size_item');
 
 function addActiveClass() {
     sizeItems.forEach(item => {
-        
+
         if (!this.classList.contains('activesize')) {
             item.classList.remove('activesize');
         }
@@ -19,7 +19,6 @@ sizeItems.forEach(item => {
 
 
 // BURGER MENU //
-
 const burgerMenu = () => {
     const burgerBtn = document.querySelector('#burger__btn');
     const burgerContainer = document.querySelector('.burger__container')
