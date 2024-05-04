@@ -59,8 +59,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
 // Находим все кнопки "Купить"
 const buyButtons = document.querySelectorAll('.item_basket_btm');
 
@@ -72,8 +70,6 @@ class Product {
         this.size = size;
     }
 }
-
-
 
 // Обходим каждую кнопку
 buyButtons.forEach(function(button) {
