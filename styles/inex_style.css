@@ -31,18 +31,13 @@ html {
 }
 
 body {
-    animation: fade 0.1s;
     font-family: "Montserrat", sans-serif;
-    /* font-family: Arial, Helvetica, sans-serif; */
     color: white;
-    /* background: -webkit-linear-gradient(60deg, #2e2439, #0f0b14); */
-    /* background:  -webkit-linear-gradient(55deg, #1d102b,#0c0810); */
     background: -webkit-linear-gradient(180deg, #1d102b, #0c0810);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden;
-    /* overflow-y: hidden; */
 }
 
 main {
