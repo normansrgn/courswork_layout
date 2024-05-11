@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
          // Устанавливаем значение в localStorage
     localStorage.setItem('showBasket', 'true');
-
+        
         addToCartBtn.classList.add('clicked');
     });
 });
